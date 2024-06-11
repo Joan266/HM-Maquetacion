@@ -1,1 +1,36 @@
-/*# sourceMappingURL=home.css.map */
+.stats__content {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em 0;
+}
+
+.stats__item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats__item__title {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 0.5em;
+}
+
+.stats__item__subtitle {
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .stats__content {
+    flex-direction: row;
+    padding: 2em 0.5em;
+  }
+}/*# sourceMappingURL=home.css.map */
