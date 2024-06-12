@@ -30,6 +30,13 @@
 
 .food-menu {
   padding: 0 5%;
+  padding-top: 6em;
+}
+
+.food-menu__donut {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 @media only screen and (min-width: 1000px) {
