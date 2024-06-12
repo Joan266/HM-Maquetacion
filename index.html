@@ -3,19 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/index.css">
     <title>Home Page</title>
+
 </head>
 <body>
     <header class="header">
-        <!-- <nav class="header__nav">
-          <ul class="header__nav__list">
-            <li class="header__nav__list__option"><a href="index.html">Home</a></li>
-            <li class="header__nav__list__option"><a href="aboutus.html">About</a></li>
-            <li class="header__nav__list__option"><a href="offers.html">Offers</a></li>
-            <li class="header__nav__list__option"><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav> -->
         <div class="header__container header__container--left">
           <div class="icon">
             <img src="./public/icon/hamburguer 1.svg" alt="hamburguer menu"></img>
@@ -37,6 +31,25 @@
         </div>
     </header>
     <main>
+      <section class="about-us">
+
+      </section>
+      <section class="rooms">
+
+      </section>
+      <section class="facilities">
+
+      </section>
+      <section class="food-menu">
+        <div class="swiper swiper--food">
+          <div class="swiper-wrapper swiper-wrapper--food">
+            <div class="swiper-slide"><img src="./public/img/slider-food-1.webp" alt="food 1"></img></div>
+            <div class="swiper-slide"><img src="./public/img/slider-food-2.webp" alt="food 2"></img></div>
+            <div class="swiper-slide"><img src="./public/img/slider-food-3.webp" alt="food 3"></img></div>
+          </div>
+          <div class="swiper-pagination swiper-pagination--food"></div>
+        </div>
+      </section>
       <section class="stats">
         <div class="stats__content">
           <div class="stats__item">
@@ -139,5 +152,7 @@
         <p>Terms of use | Privacy Environmental Policy</p>
       </article>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/swiper-init.js"></script>
 </body>
 </html>

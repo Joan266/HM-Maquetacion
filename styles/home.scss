@@ -1,14 +1,10 @@
-$font-archivo: 'Archivo', sans-serif;
-$font-old-standard-tt: 'Old Standard TT', serif;
-$font-roboto: 'Roboto', sans-serif;
-
-$beige-tan: #BEAD8E;
+@import './_variables.scss';
 
 .stats__content {
   background-color: #222222;
   display: flex;
   flex-direction: column;
-  gap:2em;
+  gap:2.5em;
   padding:2em 0;
 } 
 .stats__item {
@@ -30,11 +26,14 @@ $beige-tan: #BEAD8E;
   font-family: $font-roboto;
   font-size: 0.75rem;
 }
-
+.food-menu {
+  padding: 0 5%;
+}
 
 @media only screen and (min-width: 1000px) {
   .stats__content {
     flex-direction: row;
     padding: 2em 0.5em;
+    min-width: 43em;
   } 
 }
