@@ -21,3 +21,10 @@ let menuSwiper = new Swiper(".swiper--menu", {
     }
   }
 });
+let facilitiesSwiper = new Swiper(".swiper--facilities", {
+  slidesPerView: 1,
+  loop:true, 
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});

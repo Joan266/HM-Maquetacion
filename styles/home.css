@@ -45,6 +45,11 @@
   display: none;
 }
 
+.facilities {
+  padding: 0 5%;
+  position: relative;
+}
+
 @media only screen and (min-width: 1000px) {
   .stats__content {
     flex-direction: row;
