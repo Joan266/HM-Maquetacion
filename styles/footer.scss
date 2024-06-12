@@ -89,32 +89,41 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 10%;
+    padding: 1em 5%;
   }
   .footer__info {
     display: flex;
     flex-direction: row;
-    padding: 0 10%;
+    padding: 0 5%;
     padding-top: 4em;
     padding-bottom: 1em;
     gap: 1.5em;
   }
   .footer__info__about {
-    flex:1;
-    min-width: 14.5em;
+    flex:2;
     p {
     max-width: 20em;
     }
   }
   .footer__info__services {
-    flex:1;
-    min-width: 14.5em;
+    flex:2;
   }
   .footer__info__contact {
     flex:1;
-    min-width: 14.5em;
+    min-width: 12em;
   }
   .footer__subtitle {
     margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .footer__cr-text {
+    padding: 1em 20%;
+  }
+  .footer__info {
+    padding: 0 20%;
+    padding-top: 4em;
+    padding-bottom: 1em;
   }
 }

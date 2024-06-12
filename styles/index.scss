@@ -20,7 +20,7 @@ main {
   width: 100%;
   section {
     width: 100%;
-    margin-bottom: 4em;
+    margin-bottom: 6em;
     position: relative;
   }
 }
@@ -71,7 +71,14 @@ main {
 @media only screen and (min-width: 1000px) {
   main{
     section{
-      padding: 0 10%;
+      padding: 0 5%;
+    }
+  }
+}
+@media only screen and (min-width: 1500px) {
+  main{
+    section{
+      padding: 0 20%;
     }
   }
 }

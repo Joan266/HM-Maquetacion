@@ -15,4 +15,9 @@ let menuSwiper = new Swiper(".swiper--menu", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   },
+  breakpoints: {
+    1000: {
+      slidesPerView: 2
+    }
+  }
 });

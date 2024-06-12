@@ -31,18 +31,45 @@
 .food-menu {
   padding: 0 5%;
   padding-top: 6em;
+  position: relative;
 }
 
-.food-menu__donut {
+.food-menu__donut--1 {
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.food-menu__donut--2 {
+  display: none;
 }
 
 @media only screen and (min-width: 1000px) {
   .stats__content {
     flex-direction: row;
     padding: 2em 0.5em;
-    min-width: 43em;
+  }
+  .food-menu {
+    padding: 0 5%;
+    padding-top: 12em;
+  }
+  .food-menu__donut--1 {
+    display: none;
+  }
+  .food-menu__donut--2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 1%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .food-menu {
+    padding: 0 20%;
+    padding-top: 12em;
+  }
+  .food-menu__donut--2 {
+    left: 5%;
   }
 }/*# sourceMappingURL=home.css.map */
