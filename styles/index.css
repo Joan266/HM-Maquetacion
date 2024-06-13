@@ -51,7 +51,63 @@
   position: relative;
 }
 
+.intro-video {
+  display: block;
+  padding: 2.5em 5%;
+  position: relative;
+  background-color: #222222;
+}
+.intro-video .intro-video__video {
+  margin: 1em 0;
+}
+.intro-video .title {
+  color: #FFFFFF;
+}
+.intro-video .subtitle {
+  color: #BEAD8E;
+}
+.intro-video .text {
+  color: #C2C2C2;
+}
+
+.intro-video__video--mobile {
+  display: block;
+}
+
+.intro-video__video--desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 1000px) {
+  .intro-video {
+    padding: 3.5em 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    z-index: -2;
+    position: relative;
+  }
+  .intro-video .text {
+    max-width: 31em;
+  }
+  .intro-video .intro-video__video--mobile {
+    display: none;
+  }
+  .intro-video .intro-video__video--desktop {
+    display: block;
+    height: 20em;
+    width: 43em;
+  }
+  .intro-video::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #BEAD8E;
+    z-index: -1;
+  }
   .stats__content {
     flex-direction: row;
     padding: 2em 0.5em;
@@ -74,6 +130,9 @@
   }
 }
 @media only screen and (min-width: 1500px) {
+  .intro-video {
+    padding: 2.5em 20%;
+  }
   .food-menu {
     padding: 0 20%;
     padding-top: 12em;
@@ -248,22 +307,6 @@
   display: none;
 }
 
-.swiper__title {
-  color: #222222;
-  font-family: "Old Standard TT", serif;
-  font-size: 2.75rem;
-  font-weight: 400;
-  margin: 0.4em 0;
-}
-
-.swiper__subtitle {
-  color: #777777;
-  font-size: 0.7rem;
-  font-family: "Archivo", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-}
-
 .swiper-pagination-bullet-active {
   background-color: #BEAD8E;
 }
@@ -342,11 +385,8 @@
   font-family: "Old Standard TT", serif;
   color: #222222;
 }
-.swiper--facilities .swiper-slide .swiper-slide__text, .non-swiper--facilities .swiper-slide .swiper-slide__text {
-  font-family: "Roboto", sans-serif;
+.swiper--facilities .swiper-slide .text, .non-swiper--facilities .swiper-slide .text {
   margin-top: 1.5em;
-  font-size: 0.75rem;
-  line-height: 1.8;
   color: #777777;
   max-width: 18em;
 }
@@ -420,14 +460,10 @@
   font-weight: 400;
   width: 100%;
 }
-.swiper--menu .swiper-slide__info__text {
+.swiper--menu .text {
   color: #222222;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.65rem;
   max-width: 14em;
-  font-weight: 400;
   margin-top: 0.7em;
-  line-height: 1.8;
 }
 .swiper--menu .swiper-button-next {
   top: 97%;
@@ -452,17 +488,11 @@
   .swiper--facilities {
     display: none;
   }
-  .swiper__title {
-    font-size: 3rem;
-  }
-  .swiper__subtitle {
-    font-size: 0.75rem;
-  }
   .swiper--menu .swiper-wrapper {
     padding-right: 1em;
     margin-right: 1em;
   }
-  .swiper--menu .swiper-slide__info__text {
+  .swiper--menu .text {
     max-width: 25em;
     padding-right: 0.5em;
   }
@@ -488,7 +518,7 @@
   .swiper--menu .swiper-slide__info:hover {
     background-color: #222222;
   }
-  .swiper--menu .swiper-slide__info:hover .swiper-slide__info__text {
+  .swiper--menu .swiper-slide__info:hover .text {
     color: #FFFFFF;
   }
   .swiper--menu .swiper-slide__info:hover .swiper-slide__info__title {
@@ -496,6 +526,14 @@
   }
   .swiper--menu .swiper-slide__info:hover .swiper-slide__info__container__arrow img {
     opacity: 1;
+  }
+  .swiper--menu .swiper-button-next {
+    top: 3%;
+  }
+  .swiper--menu .swiper-button-prev {
+    top: 3%;
+    left: auto;
+    right: 3em;
   }
   .swiper--food {
     display: none;
@@ -543,6 +581,41 @@ main section {
   width: 100%;
   margin-bottom: 6em;
   position: relative;
+}
+
+.title {
+  color: #222222;
+  font-family: "Old Standard TT", serif;
+  font-size: 2.75rem;
+  font-weight: 400;
+  margin: 0.4em 0;
+}
+
+.subtitle {
+  color: #777777;
+  font-size: 0.7rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  margin-top: 1.5em;
+  font-size: 0.65rem;
+  line-height: 1.8;
+  color: #777777;
+  max-width: 18em;
+}
+
+.button {
+  border: none;
+  background-color: #BEAD8E;
+  padding: 1em 2em;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-top: 2em;
 }
 
 .logo {
@@ -593,6 +666,12 @@ main section {
 @media only screen and (min-width: 1000px) {
   main section {
     padding: 0 5%;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1500px) {

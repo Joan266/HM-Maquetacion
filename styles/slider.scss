@@ -3,20 +3,7 @@
 .non-swiper{
   display: none;
 }
-.swiper__title {
-  color: #222222;
-  font-family: $font-old-standard-tt;
-  font-size: 2.75rem;
-  font-weight: 400;
-  margin: 0.4em 0;
-}
-.swiper__subtitle {
-  color: #777777;
-  font-size: 0.7rem;
-  font-family: $font-archivo;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-}
+
 .swiper-pagination-bullet-active {
   background-color: $beige-tan;
 }
@@ -85,11 +72,8 @@
       font-family: $font-old-standard-tt;
       color: #222222;
     }
-    .swiper-slide__text {
-      font-family: $font-roboto;
+    .text {
       margin-top: 1.5em;
-      font-size: 0.75rem;
-      line-height: 1.8;
       color: #777777;
       max-width: 18em;
     }
@@ -159,14 +143,10 @@
   font-weight: 400;
   width: 100%;
  }
- .swiper-slide__info__text {
+ .text {
   color:#222222;
-  font-family: $font-roboto;
-  font-size: 0.65rem;
   max-width: 14em;
-  font-weight: 400;
   margin-top: 0.7em;
-  line-height: 1.8;
  }
  .swiper-button-next {
   top: 97%;
@@ -194,18 +174,13 @@
   .swiper--facilities {
     display: none;
   }
-  .swiper__title {
-    font-size: 3rem;
-  }
-  .swiper__subtitle {
-    font-size: 0.75rem;
-  }
+
   .swiper--menu{
     .swiper-wrapper {
       padding-right: 1em;
       margin-right: 1em;
     }
-    .swiper-slide__info__text {
+    .text {
       max-width: 25em;
       padding-right: 0.5em;
      }
@@ -229,7 +204,7 @@
      }
     .swiper-slide__info:hover {
       background-color: #222222;
-      .swiper-slide__info__text {
+      .text {
         color: #FFFFFF;
        }
       .swiper-slide__info__title {
@@ -241,6 +216,14 @@
           }
        }
      }
+    .swiper-button-next {
+    top: 3%;
+    }
+    .swiper-button-prev {
+    top: 3%;
+    left: auto;
+    right: 3em;
+    }
   }
   .swiper--food{
     display: none;

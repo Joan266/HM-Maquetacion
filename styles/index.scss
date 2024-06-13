@@ -24,7 +24,38 @@ main {
     position: relative;
   }
 }
+.title {
+  color: #222222;
+  font-family: $font-old-standard-tt;
+  font-size: 2.75rem;
+  font-weight: 400;
+  margin: 0.4em 0;
+}
+.subtitle {
+  color: #777777;
+  font-size: 0.7rem;
+  font-family: $font-archivo;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
 
+.text {
+  font-family: $font-roboto;
+  margin-top: 1.5em;
+  font-size: 0.65rem;
+  line-height: 1.8;
+  color: #777777;
+  max-width: 18em;
+}
+.button{
+  border: none;
+  background-color: $beige-tan;
+  padding: 1em 2em;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-top: 2em;
+}
 .logo {
   display: flex;
   flex-direction: row;
@@ -73,6 +104,12 @@ main {
     section{
       padding: 0 5%;
     }
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1500px) {
