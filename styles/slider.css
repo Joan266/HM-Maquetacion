@@ -114,15 +114,15 @@
 .swiper--rooms .swiper-slide .swiper-slide__room-features {
   position: absolute;
   top: 0;
-  left: 0;
-  transform: translate(15%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .swiper--rooms .swiper-slide .swiper-slide__room-description {
   position: absolute;
   bottom: 0;
-  left: 5%;
+  left: 50%;
   width: 90%;
-  transform: translateY(85%);
+  transform: translate(-50%, 85%);
   background-color: white;
   padding: 1em;
 }
@@ -134,7 +134,7 @@
 }
 .swiper--rooms .swiper-slide .swiper-slide__room-description .text {
   max-width: none;
-  margin: 1em;
+  margin: 1em 0;
 }
 .swiper--rooms .swiper-slide .swiper-slide__room-description .swiper-slide__room-description__price {
   font-weight: 700;
@@ -230,6 +230,32 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .swiper--rooms .swiper-button-next {
+    top: 10em;
+  }
+  .swiper--rooms .swiper-button-prev {
+    top: 10em;
+  }
+  .swiper--rooms .swiper-slide {
+    height: 17em;
+  }
+  .swiper--rooms .swiper-slide .swiper-slide__room-features {
+    transition: all 100ms ease;
+    opacity: 0;
+  }
+  .swiper--rooms .swiper-slide .swiper-slide__room-description {
+    transition: all 100ms ease;
+    opacity: 0;
+  }
+  .swiper--rooms .swiper-slide-active {
+    margin: 0 1em;
+  }
+  .swiper--rooms .swiper-slide-active .swiper-slide__room-features {
+    opacity: 1;
+  }
+  .swiper--rooms .swiper-slide-active .swiper-slide__room-description {
+    opacity: 1;
+  }
   .non-swiper--facilities {
     max-width: none;
     display: grid;
@@ -308,5 +334,22 @@
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .swiper--rooms .swiper-button-next {
+    right: 28%;
+  }
+  .swiper--rooms .swiper-button-prev {
+    left: 30%;
+  }
+  .swiper--rooms .swiper-slide .swiper-slide__room-description {
+    display: flex;
+    text-align: left;
+  }
+  .swiper--rooms .swiper-slide .swiper-slide__room-description .swiper-slide__room-description__price {
+    margin-left: 0.75em;
+    width: 45%;
+    margin-top: 0.7em;
   }
 }/*# sourceMappingURL=slider.css.map */

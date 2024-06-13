@@ -81,6 +81,9 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .rooms {
+    padding: 0;
+  }
   .intro-video {
     padding: 3.5em 5%;
     display: flex;

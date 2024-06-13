@@ -37,7 +37,8 @@ let roomsSwiper = new Swiper(".swiper--rooms", {
   },
   breakpoints: {
     1000: {
-      slidesPerView: 3
+      slidesPerView: 3,
+      centeredSlides: true, 
     }
   }
 });
