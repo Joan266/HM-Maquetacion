@@ -59,6 +59,9 @@
     padding: 0 5%;
     padding-top: 12em;
   }
+  .facilities {
+    padding: 0 5%;
+  }
   .food-menu__donut--1 {
     display: none;
   }
@@ -73,6 +76,9 @@
   .food-menu {
     padding: 0 20%;
     padding-top: 12em;
+  }
+  .facilities {
+    padding: 0 20%;
   }
   .food-menu__donut--2 {
     left: 5%;
