@@ -1,0 +1,355 @@
+.non-swiper {
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #BEAD8E;
+}
+
+.swiper-button-next {
+  height: 1.7em;
+  width: 1.7em;
+  color: #BEAD8E;
+  background-color: #F8F8F8;
+  transition: background-color 100ms ease, color 100ms ease;
+  border: 1px solid #BEAD8E;
+}
+
+.swiper-button-next:hover {
+  background-color: #BEAD8E;
+  color: #F8F8F8;
+}
+
+.swiper-button-next:after {
+  font-size: 0.6rem;
+}
+
+.swiper-button-prev {
+  height: 1.7em;
+  width: 1.7em;
+  color: #BEAD8E;
+  background-color: #F8F8F8;
+  border: 1px solid #BEAD8E;
+  transition: background-color 100ms ease, color 100ms ease;
+}
+
+.swiper-button-prev:hover {
+  background-color: #BEAD8E;
+  color: #F8F8F8;
+}
+
+.swiper-button-prev:after {
+  font-size: 0.6rem;
+}
+
+.non-swiper--facilities {
+  display: none;
+}
+
+.swiper--facilities, .non-swiper--facilities {
+  max-width: 25em;
+  text-align: center;
+}
+.swiper--facilities .swiper-wrapper, .non-swiper--facilities .swiper-wrapper {
+  margin-bottom: 18%;
+}
+.swiper--facilities .swiper-slide, .non-swiper--facilities .swiper-slide {
+  padding: 0 1.5em;
+  padding-top: 9.5em;
+  text-align: left;
+}
+.swiper--facilities .swiper-slide .swiper-slide__num, .non-swiper--facilities .swiper-slide .swiper-slide__num {
+  position: absolute;
+  top: 0;
+  right: 0.1em;
+  font-family: "Archivo", sans-serif;
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: rgba(34, 34, 34, 0.0392156863);
+}
+.swiper--facilities .swiper-slide .swiper-slide__icon, .non-swiper--facilities .swiper-slide .swiper-slide__icon {
+  position: absolute;
+  top: 23%;
+  left: 1em;
+  height: 4.1em;
+  width: 4.1em;
+}
+.swiper--facilities .swiper-slide .swiper-slide__title, .non-swiper--facilities .swiper-slide .swiper-slide__title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Old Standard TT", serif;
+  color: #222222;
+}
+.swiper--facilities .swiper-slide .text, .non-swiper--facilities .swiper-slide .text {
+  margin-top: 1.5em;
+  color: #777777;
+  max-width: 18em;
+}
+
+.swiper--food {
+  max-width: 25em;
+}
+.swiper--food .swiper-slide {
+  height: auto;
+}
+.swiper--food .swiper-slide__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10%;
+  max-height: 90%;
+}
+
+.swiper--rooms {
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 10em;
+}
+.swiper--rooms .swiper-slide {
+  height: 14em;
+  position: relative;
+  text-align: center;
+}
+.swiper--rooms .swiper-slide .swiper-slide__room-features {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.swiper--rooms .swiper-slide .swiper-slide__room-description {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, 85%);
+  background-color: white;
+  padding: 1em;
+}
+.swiper--rooms .swiper-slide .swiper-slide__room-description .swiper-slide__room-description__title {
+  font-weight: 400;
+  font-family: "Old Standard TT", serif;
+  color: #222222;
+  font-size: 1.5rem;
+}
+.swiper--rooms .swiper-slide .swiper-slide__room-description .text {
+  max-width: none;
+  margin: 1em 0;
+}
+.swiper--rooms .swiper-slide .swiper-slide__room-description .swiper-slide__room-description__price {
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  color: #BEAD8E;
+  font-size: 1.8rem;
+}
+.swiper--rooms .swiper-slide .swiper-slide__room-description .swiper-slide__room-description__price span {
+  font-size: 0.75rem;
+}
+.swiper--rooms .swiper-slide__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.swiper--rooms .swiper-button-next {
+  top: 9em;
+}
+.swiper--rooms .swiper-button-prev {
+  top: 9em;
+}
+
+.swiper--menu {
+  margin-bottom: 3em;
+}
+.swiper--menu .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.swiper--menu .swiper-slide__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  height: 6.5em;
+  position: relative;
+}
+.swiper--menu .swiper-slide__info__img {
+  height: 100%;
+  min-width: 6.5em;
+  width: 6.5em;
+}
+.swiper--menu .swiper-slide__info__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.swiper--menu .swiper-slide__info__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+}
+.swiper--menu .swiper-slide__info__container__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  padding: 0.5em 1em;
+}
+.swiper--menu .swiper-slide__info__container__arrow {
+  display: none;
+}
+.swiper--menu .swiper-slide__info__title {
+  color: #222222;
+  font-family: "Old Standard TT", serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  width: 100%;
+}
+.swiper--menu .text {
+  color: #222222;
+  max-width: 14em;
+  margin-top: 0.7em;
+}
+.swiper--menu .swiper-button-next {
+  top: 97%;
+}
+.swiper--menu .swiper-button-prev {
+  top: 97%;
+  left: auto;
+  right: 3em;
+}
+.swiper--menu .swiper-wrapper {
+  margin-bottom: 18%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .swiper--rooms .swiper-button-next {
+    top: 10em;
+  }
+  .swiper--rooms .swiper-button-prev {
+    top: 10em;
+  }
+  .swiper--rooms .swiper-slide {
+    height: 17em;
+  }
+  .swiper--rooms .swiper-slide .swiper-slide__room-features {
+    transition: all 100ms ease;
+    opacity: 0;
+  }
+  .swiper--rooms .swiper-slide .swiper-slide__room-description {
+    transition: all 100ms ease;
+    opacity: 0;
+  }
+  .swiper--rooms .swiper-slide-active {
+    margin: 0 1em;
+  }
+  .swiper--rooms .swiper-slide-active .swiper-slide__room-features {
+    opacity: 1;
+  }
+  .swiper--rooms .swiper-slide-active .swiper-slide__room-description {
+    opacity: 1;
+  }
+  .non-swiper--facilities {
+    max-width: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+  .swiper--facilities {
+    display: none;
+  }
+  .swiper--menu .swiper-wrapper {
+    padding-right: 1em;
+    margin-right: 1em;
+  }
+  .swiper--menu .text {
+    max-width: 25em;
+    padding-right: 0.5em;
+  }
+  .swiper--menu .swiper-slide__info {
+    cursor: pointer;
+    transition: all 300ms ease;
+    width: 95%;
+  }
+  .swiper--menu .swiper-slide__info .swiper-slide__info__container__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-right: 1em;
+  }
+  .swiper--menu .swiper-slide__info .swiper-slide__info__container__arrow img {
+    height: 2em;
+    width: auto;
+    opacity: 0;
+  }
+  .swiper--menu .swiper-slide__info:hover {
+    background-color: #222222;
+  }
+  .swiper--menu .swiper-slide__info:hover .text {
+    color: #FFFFFF;
+  }
+  .swiper--menu .swiper-slide__info:hover .swiper-slide__info__title {
+    color: #FFFFFF;
+  }
+  .swiper--menu .swiper-slide__info:hover .swiper-slide__info__container__arrow img {
+    opacity: 1;
+  }
+  .swiper--menu .swiper-button-next {
+    top: 3%;
+  }
+  .swiper--menu .swiper-button-prev {
+    top: 3%;
+    left: auto;
+    right: 3em;
+  }
+  .swiper--food {
+    display: none;
+  }
+  .non-swiper--food {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: 100%;
+    justify-content: center;
+    height: 16em;
+  }
+  .non-swiper--food .non-swiper__item {
+    position: relative;
+    flex: 1;
+    background-color: #777777;
+  }
+  .non-swiper--food .non-swiper__item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .swiper--rooms .swiper-button-next {
+    right: 28%;
+  }
+  .swiper--rooms .swiper-button-prev {
+    left: 30%;
+  }
+  .swiper--rooms .swiper-slide .swiper-slide__room-description {
+    display: flex;
+    text-align: left;
+  }
+  .swiper--rooms .swiper-slide .swiper-slide__room-description .swiper-slide__room-description__price {
+    margin-left: 0.75em;
+    width: 45%;
+    margin-top: 0.7em;
+  }
+}/*# sourceMappingURL=slider.css.map */
