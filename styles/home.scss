@@ -171,7 +171,7 @@
   }
   form {
     margin-top: 3em;
-    padding: 2em 0;
+    padding: 1em 0;
     display: block;
     label {
       font-family: $font-roboto;
@@ -193,6 +193,7 @@
       transform: translateY(-50%);
     }
     input {
+      cursor: pointer;
       width: 100%;
       border: none;
       background-color: transparent;
@@ -228,10 +229,34 @@
 }
 @media only screen and (min-width: 1000px) {
   .intro {
+    position: relative;
+    padding-top: 10em;
+    h2 {
+      font-size: 4rem;
+      max-width: 7em;
+      margin-bottom: 0;
+    }
     form {
+      align-items: center;
       display: flex;
       flex-direction: row;
+      justify-content: left;
+      gap: 1em;
+      margin-top: 8em;
+      input{
+        min-width: 20em;
+      }
+      .button {
+        margin: 0;
+        margin-left: 4em;
+        height: fit-content;
+      }
     }
+  }
+  .intro::after {
+    top: 43%;
+    height: 75%;
+    transform: translateY(-50%);
   }
   .about-us {
     display: flex;

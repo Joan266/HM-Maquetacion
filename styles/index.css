@@ -180,7 +180,7 @@
 }
 .intro form {
   margin-top: 3em;
-  padding: 2em 0;
+  padding: 1em 0;
   display: block;
 }
 .intro form label {
@@ -203,6 +203,7 @@
   transform: translateY(-50%);
 }
 .intro form input {
+  cursor: pointer;
   width: 100%;
   border: none;
   background-color: transparent;
@@ -238,9 +239,36 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .intro {
+    position: relative;
+    padding-top: 10em;
+  }
+  .intro h2 {
+    font-size: 4rem;
+    max-width: 7em;
+    margin-bottom: 0;
+  }
   .intro form {
+    align-items: center;
     display: flex;
     flex-direction: row;
+    justify-content: left;
+    gap: 1em;
+    margin-top: 8em;
+  }
+  .intro form input {
+    min-width: 20em;
+  }
+  .intro form .button {
+    margin: 0;
+    margin-left: 4em;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .intro::after {
+    top: 43%;
+    height: 75%;
+    transform: translateY(-50%);
   }
   .about-us {
     display: flex;
@@ -906,7 +934,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 main {
-  padding-top: 4em;
   width: 100%;
 }
 main section {
@@ -947,7 +974,7 @@ main section {
   color: #FFFFFF;
   letter-spacing: 0.1em;
   font-weight: 700;
-  margin-top: 2em;
+  margin-top: 1em;
   cursor: pointer;
 }
 
