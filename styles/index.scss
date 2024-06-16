@@ -15,8 +15,26 @@ a {
   color: inherit; 
 }
 
+
+input[type="date"] {
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none; 
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  outline: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none; 
+}
+
 main {
-  padding-top: 4em;
   width: 100%;
   section {
     width: 100%;
@@ -54,7 +72,12 @@ main {
   color: #FFFFFF;
   letter-spacing: 0.1em;
   font-weight: 700;
-  margin-top: 2em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+.button--black{
+  border: 2px solid #FFFFFF54;
+  background-color: transparent;
 }
 .logo {
   display: flex;

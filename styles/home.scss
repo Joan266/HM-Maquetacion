@@ -86,7 +86,7 @@
   right: 0;
   width: 100%;
   z-index: -1;
-  height: 30%;
+  height: 35%;
   background-color: #F9F9F9;
 }
 .about-us__card {
@@ -153,7 +153,111 @@
    color: #FFFFFF;
  }
 }
+.intro {
+  background-color: transparent;
+  padding: 0 5%;
+  padding-top: 3.5em;
+  position: relative;
+  h1,h2,label {
+    color: #FFFFFF;
+  }
+  h1 {
+    max-width: 60%;
+    line-height: 1.4;
+    margin-bottom: 2em;
+  }
+  .button--black {
+    margin-left: 1em;
+  }
+  form {
+    margin-top: 3em;
+    padding: 1em 0;
+    display: block;
+    label {
+      font-family: $font-roboto;
+      font-weight: 700;
+      font-size: 0.85rem;
+      width: 100%;
+      text-align: left;
+    }
+    .date-input-container{
+      position: relative;
+      margin-top: 0.5em;
+      margin-bottom: 1.5em;
+    }
+    .date-input-container::after{
+      content: url(/public/icon/calendar_icon\ 2.svg);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    input {
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      background-color: transparent;
+      border-bottom: 2px solid $beige-tan;
+      color: #686868;
+      font-family: $font-roboto;
+      font-weight: 400;
+      font-size: 0.8rem;
+      height: 3em;
+      padding-left: 1.5em;
+    }
+  }
+}
+.intro::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58%;
+  z-index: -1;
+  background-color: #333333;
+}
+.intro::before {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-color: #222222;
+}
 @media only screen and (min-width: 1000px) {
+  .intro {
+    position: relative;
+    padding-top: 10em;
+    h2 {
+      font-size: 4rem;
+      max-width: 7em;
+      margin-bottom: 0;
+    }
+    form {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      gap: 1em;
+      margin-top: 8em;
+      input{
+        min-width: 20em;
+      }
+      .button {
+        margin: 0;
+        margin-left: 4em;
+        height: fit-content;
+      }
+    }
+  }
+  .intro::after {
+    top: 43%;
+    height: 75%;
+    transform: translateY(-50%);
+  }
   .about-us {
     display: flex;
     flex-direction: row-reverse;
@@ -172,7 +276,7 @@
   .about-us:after {
     content: "";
     position: absolute;
-    top: 27%;
+    top: 28%;
     width: 55%;
     z-index: -1;
     height: 75%;
@@ -206,7 +310,7 @@
     display: flex;
     flex-direction: row;
     gap: 2em;
-    z-index: -2;
+    z-index: 0;
     position: relative;
     .text{
       max-width: 31em;
@@ -253,6 +357,10 @@
   }
 }
 @media only screen and (min-width: 1500px) {
+  .intro {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
   .about-us {
     padding: 2.5em 20%;
   }
