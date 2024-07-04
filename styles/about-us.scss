@@ -1,2 +1,44 @@
 @import './_variables.scss';
 
+.about-us{
+  padding: 0 1em;
+}
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  grid-template-rows: repeat(2, 1fr); /* Creates 2 rows with height based on content */
+  gap: 0;
+}
+
+.facilities-grid__cell {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+.facilities-grid__cell__icon {
+  width: 6em;
+  height: 6em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.about-us__restaurant {
+  margin: 1em 0;
+  padding: 1em;
+  background-color: white;
+  border-radius: 0.3em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+}
+
+.about-us__title {
+  color: #222222;
+  font-family: $font-old-standard-tt;
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin: 0.4em 0;
+}

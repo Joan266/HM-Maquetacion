@@ -589,6 +589,7 @@ main section {
   font-weight: 700;
   margin-top: 1em;
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
 }
 
 .button--black {
@@ -642,14 +643,17 @@ main section {
 }
 
 .page-intro {
+  position: relative;
   background-color: #333333;
   padding: 2em 1em;
   padding-bottom: 4em;
+  margin-bottom: 2em;
 }
 .page-intro h1, .page-intro h2 {
   color: #FFFFFF;
 }
-.page-intro .page-intro__path-info {
+
+.page-intro__path-info {
   background-color: #ffffff;
   color: #333333;
   position: absolute;
@@ -660,8 +664,23 @@ main section {
   font-weight: 600;
   padding: 1em 1.5em;
 }
-.page-intro .page-intro__path-info > span {
+.page-intro__path-info > span {
   color: #BEAD8E;
+}
+
+.img-frame {
+  width: 100%;
+  height: 12em;
+  background-color: gainsboro;
+  margin-bottom: 1em;
+}
+
+.big-p {
+  font-family: "Old Standard TT", serif;
+  font-size: x-large;
+  text-align: center;
+  margin: 1em 0;
+  line-height: 1.4;
 }
 
 @media only screen and (min-width: 1000px) {
