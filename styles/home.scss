@@ -166,9 +166,6 @@
     line-height: 1.4;
     margin-bottom: 2em;
   }
-  .button--black {
-    margin-left: 1em;
-  }
   form {
     margin-top: 3em;
     padding: 1em 0;
@@ -231,6 +228,9 @@
   .intro {
     position: relative;
     padding-top: 10em;
+    .button--black {
+      margin-left: 1em;
+    }
     h2 {
       font-size: 4rem;
       max-width: 7em;

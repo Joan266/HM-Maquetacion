@@ -1,4 +1,3 @@
-@import './home.scss';
 @import './header.scss';
 @import './footer.scss';
 @import './slider.scss';
@@ -120,7 +119,28 @@ main {
     width: auto;
   }
 }
-
+.page-intro {
+  background-color: #333333;
+  padding: 2em 1em;
+  padding-bottom: 4em;
+  h1,h2 {
+    color: #FFFFFF;
+  }
+  .page-intro__path-info {
+    background-color: #ffffff;
+    color: #333333;
+    position: absolute;
+    bottom:0;
+    right:1em;
+    font-family: $font-roboto;
+    font-size: small;
+    font-weight: 600;
+    padding:1em 1.5em;
+    > span{
+      color: $beige-tan;
+    }
+  }
+}
 
 @media only screen and (min-width: 1000px) {
   main{
