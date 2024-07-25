@@ -67,6 +67,9 @@
   font-weight: 700;
   color: rgba(34, 34, 34, 0.0392156863);
 }
+.swiper--facilities .swiper-slide .swiper-slide__num--black, .non-swiper--facilities .swiper-slide .swiper-slide__num--black {
+  color: #222222;
+}
 .swiper--facilities .swiper-slide .swiper-slide__icon, .non-swiper--facilities .swiper-slide .swiper-slide__icon {
   position: absolute;
   top: 23%;
@@ -80,10 +83,23 @@
   font-family: "Old Standard TT", serif;
   color: #222222;
 }
-.swiper--facilities .swiper-slide .text, .non-swiper--facilities .swiper-slide .text {
+.swiper--facilities .swiper-slide .swiper-slide__title--white, .non-swiper--facilities .swiper-slide .swiper-slide__title--white {
+  color: #FFFFFF;
+}
+.swiper--facilities .swiper-slide .swiper-slide__text, .non-swiper--facilities .swiper-slide .swiper-slide__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.65rem;
+  line-height: 1.8;
   margin-top: 1.5em;
   color: #777777;
   max-width: 18em;
+  margin-bottom: 3em;
+}
+.swiper--facilities .swiper-slide .swiper-slide__text--white, .non-swiper--facilities .swiper-slide .swiper-slide__text--white {
+  color: #FFFFFF;
+}
+.swiper--facilities .swiper-slide--black, .non-swiper--facilities .swiper-slide--black {
+  background-color: #292929;
 }
 
 .swiper--food {
@@ -262,6 +278,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1.5em;
+  }
+  .non-swiper--facilities .swiper-slide .swiper-slide__title {
+    font-size: 1.5rem;
   }
   .swiper--facilities {
     display: none;

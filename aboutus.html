@@ -1,128 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/about-us.css">
-    <title>About Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/about-us.css">
+  <title>About Us</title>
 </head>
+
 <body>
-    <main>
-        <div class="page-intro">
-            <h1 class="subtitle">THE ULTIMATE LUXURY</h1>
-            <h2 class="title">About Us</h2>
-            <div class="page-intro__path-info">Home | <span>About</span></div>
-        </div>
-        <section class="about-us">
-            <div class="img-frame">
-                <video src=""></video>
-            </div>
-            <p class="big-p">Hello. Our hotel has been present for over 20 years. We make the best of all our customers.
-            </p>
-            <div class="facilities-grid">
-                <div class="facilities-grid__cell">
-                    <div class="facilities-grid__cell__icon"><img src="public\icon\coffe_icon 1.svg" alt="coffe breakfast"></img></div>
-                    <h5 class="subtitle subtitle--black">BREAKFAST</h5>
-                </div>
-                <div class="facilities-grid__cell facilities-grid__cell--tan">
-                    <div class="facilities-grid__cell__icon"><img src="public\icon\plane_icon 1.svg" alt="plane icon"></div>
-                    <h5 class="subtitle subtitle--white">AIRPORT PICKUP</h5>
-                </div>
-                <div class="facilities-grid__cell">
-                    <div class="facilities-grid__cell__icon"><img src="public\icon\city_icon 1.svg" alt="city guide"></div>
-                    <h5 class="subtitle subtitle--black">CITY GUIDE</h5>
-                </div>
-                <div class="facilities-grid__cell facilities-grid__cell--exception">
-                    <div class="facilities-grid__cell__icon"><img src="public\icon\grill_icon 1.svg" alt="grill"></div>
-                    <h5 class="subtitle subtitle--black">BBQ PARTY</h5>
-                </div>
-                <div class="facilities-grid__cell">
-                    <div class="facilities-grid__cell__icon"><img src="public\icon\lux-room_icon 1.svg" alt="luxury room"></div>
-                    <h5 class="subtitle subtitle--black">LUXURY ROOM</h5>
-                </div>
-            </div>
-            <div class="about-us__restaurant">
-                <div  class="img-frame"><img></div>
-                <div  class="about-us__restaurant__info">
-                  <h3 class="subtitle">RESTAURANT</h3>
-                  <h4 class="about-us__title">Get Restaurant Facilities & Many Other More</h4>
-                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                  <button class="button">TAKE A TOUR</button>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__info">
-        <section class="footer__info__about">
-          <a href="index.html">
-            <article class="logo logo--footer">
-              <div class="icon icon--logo">H</div>
-              <img src="./public/icon/Hotel Miranda.svg" alt="hotel miranda text"></img>
-            </article>
-          </a>
-          <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
-          <article class="footer__media">
-            <div class="icon"><img src="./public/icon/facebook_icon 1.svg" alt="facebook icon"></img></div>
-            <div class="icon icon--twitter"><img src="./public/icon/twitter_con 1.svg" alt="twitter con"></img></div>
-            <div class="icon"><img src="./public/icon/be_icon 1.svg" alt="be icon"></img></div>
-            <div class="icon"><img src="./public/icon/linkedin_icon 1.svg" alt="linkedin icon"></img></div>
-            <div class="icon"><img src="./public/icon/youtube_icon 1.svg" alt="youtube icon"></img></div>
-          </article>
-        </section>
-        <section class="footer__info__services">
-          <div class="footer__subtitle">Services.</div>
-          <ul>
-            <li>Gaming Zone</li>
-            <li>Marriage Party</li>
-            <li>Party Planning</li>
-            <li>Tour Consultancy</li>
-            <li>Restaurant & Bar</li>
-            <li>Swimming Pool</li>
-            <li>Wellness & Spa</li>
-            <li>Restaurant</li>
-            <li>Conference Room</li>
-            <li>Cocktail Party House</li>
-          </ul>        
-        </section>
-        <section class="footer__info__contact">
-          <div class="footer__subtitle">Contact Us.</div>
-          <div class="footer__contact-num">
-            <div class="icon">
-              <img src="./public/icon/phone_icon 1.svg" alt="phone icon"></img>
-            </div>
-            <div>
-              <div class="footer__contact-num__title">Phone Number</div>
-              <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
-          </div>
-          </div>
-          <div class="footer__contact-num">
-            <div class="icon">
-              <img src="./public/icon/email_icon 1.svg" alt="email icon"></img>
-            </div>
-            <div>
-              <div class="footer__contact-num__title">Phone Number</div>
-              <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
-            </div>
-          </div>
-          <div class="footer__contact-num">
-            <div class="icon">
-              <img src="./public/icon/location_icon 1.svg" alt="location icon"></img>
-            </div>
-            <div>
-              <div class="footer__contact-num__title">Phone Number</div>
-              <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
-          </div>
-          </div>
-        </section>
+  <main>
+    <div class="page-intro">
+      <h1 class="subtitle">THE ULTIMATE LUXURY</h1>
+      <h2 class="title">About Us</h2>
+      <div class="page-intro__path-info">Home | <span>About</span></div>
+    </div>
+    <section class="about-us">
+      <div class="img-frame">
+        <video src=""></video>
       </div>
-      <article class="footer__cr-text">
-        <p>Copyright joanalemany26@gmail.com - 2024</p>
-        <p>Terms of use | Privacy Environmental Policy</p>
-      </article>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="scripts/swiper-init.js"></script>
+      <p class="big-p">Hello. Our hotel has been present for over 20 years. We make the best of all our customers.
+      </p>
+      <div class="facilities-grid">
+        <div class="facilities-grid__cell">
+          <div class="facilities-grid__cell__icon"><img src="public\icon\coffe_icon 1.svg" alt="coffe breakfast"></img>
+          </div>
+          <h5 class="subtitle subtitle--black">BREAKFAST</h5>
+        </div>
+        <div class="facilities-grid__cell facilities-grid__cell--tan">
+          <div class="facilities-grid__cell__icon"><img src="public\icon\plane_icon 1.svg" alt="plane icon"></div>
+          <h5 class="subtitle subtitle--white">AIRPORT PICKUP</h5>
+        </div>
+        <div class="facilities-grid__cell">
+          <div class="facilities-grid__cell__icon"><img src="public\icon\city_icon 1.svg" alt="city guide"></div>
+          <h5 class="subtitle subtitle--black">CITY GUIDE</h5>
+        </div>
+        <div class="facilities-grid__cell facilities-grid__cell--exception">
+          <div class="facilities-grid__cell__icon"><img src="public\icon\grill_icon 1.svg" alt="grill"></div>
+          <h5 class="subtitle subtitle--black">BBQ PARTY</h5>
+        </div>
+        <div class="facilities-grid__cell">
+          <div class="facilities-grid__cell__icon"><img src="public\icon\lux-room_icon 1.svg" alt="luxury room"></div>
+          <h5 class="subtitle subtitle--black">LUXURY ROOM</h5>
+        </div>
+      </div>
+      <div class="about-us__restaurant">
+        <div class="img-frame"><img></div>
+        <div class="about-us__restaurant__info">
+          <h3 class="subtitle">RESTAURANT</h3>
+          <h4 class="about-us__title">Get Restaurant Facilities & Many Other More</h4>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore.</p>
+          <button class="button">TAKE A TOUR</button>
+        </div>
+      </div>
+    </section>
+    <section class="facilities facilities--black">
+      <h3 class="subtitle subtitle--white">FACILITIES</h3>
+      <h4 class="title title--white">Core Features</h4>
+      <div class="swiper swiper--facilities">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--black">
+            <span class="swiper-slide__num swiper-slide__num--black">01</span>
+            <img class="swiper-slide__icon" src="./public/icon/facilities_icon 1.svg" alt="food 1"></img>
+            <h5 class="swiper-slide__title swiper-slide__title--white">Have High Rating</h5>
+            <p class="swiper-slide__text swiper-slide__text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna..</p>
+          </div>
+          <div class="swiper-slide swiper-slide--black">
+            <span class="swiper-slide__num swiper-slide__num--black">02</span>
+            <img class="swiper-slide__icon" src="./public/icon/facilities_icon 2.svg" alt="food 1"></img>
+            <h5 class="swiper-slide__title swiper-slide__title--white">Quiet Hours</h5>
+            <p class="swiper-slide__text swiper-slide__text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna..</p>
+          </div>
+          <div class="swiper-slide swiper-slide--black">
+            <span class="swiper-slide__num swiper-slide__num--black">03</span>
+            <img class="swiper-slide__icon" src="./public/icon/facilities_icon 3.svg" alt="food 1"></img>
+            <h5 class="swiper-slide__title swiper-slide__title--white">Best Locations</h5>
+            <p class="swiper-slide__text swiper-slide__text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna..</p>
+          </div>
+          <div class="swiper-slide swiper-slide--black">
+            <span class="swiper-slide__num swiper-slide__num--black">04</span>
+            <img class="swiper-slide__icon" src="./public/icon/facilities_icon 4.svg" alt="food 1"></img>
+            <h5 class="swiper-slide__title swiper-slide__title--white">Free Cancellation</h5>
+            <p class="swiper-slide__text swiper-slide__text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna..</p>
+          </div>
+          <div class="swiper-slide swiper-slide--black">
+            <span class="swiper-slide__num swiper-slide__num--black">05</span>
+            <img class="swiper-slide__icon" src="./public/icon/facilities_icon 5.svg" alt="food 1"></img>
+            <h5 class="swiper-slide__title swiper-slide__title--white">Payment Options</h5>
+            <p class="swiper-slide__text swiper-slide__text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna..</p>
+          </div>
+          <div class="swiper-slide swiper-slide--black">
+            <span class="swiper-slide__num swiper-slide__num--black">06</span>
+            <img class="swiper-slide__icon" src="./public/icon/facilities_icon 6.svg" alt="food 1"></img>
+            <h5 class="swiper-slide__title swiper-slide__title--white">Special Offers</h5>
+            <p class="swiper-slide__text swiper-slide__text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna..</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="non-swiper non-swiper--facilities">
+        <div class="swiper-slide swiper-slide--black">
+          <span class="swiper-slide__num swiper-slide__num--black">01</span>
+          <img class="swiper-slide__icon" src="./public/icon/facilities_icon 1.svg" alt="food 1"></img>
+          <h5 class="swiper-slide__title swiper-slide__title--white">Have High Rating</h5>
+          <p class="swiper-slide__text swiper-slide__text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna..</p>
+        </div>
+        <div class="swiper-slide swiper-slide--black">
+          <span class="swiper-slide__num swiper-slide__num--black">02</span>
+          <img class="swiper-slide__icon" src="./public/icon/facilities_icon 2.svg" alt="food 1"></img>
+          <h5 class="swiper-slide__title swiper-slide__title--white">Quiet Hours</h5>
+          <p class="swiper-slide__text swiper-slide__text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna..</p>
+        </div>
+        <div class="swiper-slide swiper-slide--black">
+          <span class="swiper-slide__num swiper-slide__num--black">03</span>
+          <img class="swiper-slide__icon" src="./public/icon/facilities_icon 3.svg" alt="food 1"></img>
+          <h5 class="swiper-slide__title swiper-slide__title--white">Best Locations</h5>
+          <p class="swiper-slide__text swiper-slide__text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna..</p>
+        </div>
+        <div class="swiper-slide swiper-slide--black">
+          <span class="swiper-slide__num swiper-slide__num--black">04</span>
+          <img class="swiper-slide__icon" src="./public/icon/facilities_icon 4.svg" alt="food 1"></img>
+          <h5 class="swiper-slide__title swiper-slide__title--white">Free Cancellation</h5>
+          <p class="swiper-slide__text swiper-slide__text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna..</p>
+        </div>
+        <div class="swiper-slide swiper-slide--black">
+          <span class="swiper-slide__num swiper-slide__num--black">05</span>
+          <img class="swiper-slide__icon" src="./public/icon/facilities_icon 5.svg" alt="food 1"></img>
+          <h5 class="swiper-slide__title swiper-slide__title--white">Payment Options</h5>
+          <p class="swiper-slide__text swiper-slide__text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna..</p>
+        </div>
+        <div class="swiper-slide swiper-slide--black">
+          <span class="swiper-slide__num swiper-slide__num--black">06</span>
+          <img class="swiper-slide__icon" src="./public/icon/facilities_icon 6.svg" alt="food 1"></img>
+          <h5 class="swiper-slide__title swiper-slide__title--white">Special Offers</h5>
+          <p class="swiper-slide__text swiper-slide__text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna..</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__info">
+      <section class="footer__info__about">
+        <a href="index.html">
+          <article class="logo logo--footer">
+            <div class="icon icon--logo">H</div>
+            <img src="./public/icon/Hotel Miranda.svg" alt="hotel miranda text"></img>
+          </article>
+        </a>
+        <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
+        <article class="footer__media">
+          <div class="icon"><img src="./public/icon/facebook_icon 1.svg" alt="facebook icon"></img></div>
+          <div class="icon icon--twitter"><img src="./public/icon/twitter_con 1.svg" alt="twitter con"></img></div>
+          <div class="icon"><img src="./public/icon/be_icon 1.svg" alt="be icon"></img></div>
+          <div class="icon"><img src="./public/icon/linkedin_icon 1.svg" alt="linkedin icon"></img></div>
+          <div class="icon"><img src="./public/icon/youtube_icon 1.svg" alt="youtube icon"></img></div>
+        </article>
+      </section>
+      <section class="footer__info__services">
+        <div class="footer__subtitle">Services.</div>
+        <ul>
+          <li>Gaming Zone</li>
+          <li>Marriage Party</li>
+          <li>Party Planning</li>
+          <li>Tour Consultancy</li>
+          <li>Restaurant & Bar</li>
+          <li>Swimming Pool</li>
+          <li>Wellness & Spa</li>
+          <li>Restaurant</li>
+          <li>Conference Room</li>
+          <li>Cocktail Party House</li>
+        </ul>
+      </section>
+      <section class="footer__info__contact">
+        <div class="footer__subtitle">Contact Us.</div>
+        <div class="footer__contact-num">
+          <div class="icon">
+            <img src="./public/icon/phone_icon 1.svg" alt="phone icon"></img>
+          </div>
+          <div>
+            <div class="footer__contact-num__title">Phone Number</div>
+            <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
+          </div>
+        </div>
+        <div class="footer__contact-num">
+          <div class="icon">
+            <img src="./public/icon/email_icon 1.svg" alt="email icon"></img>
+          </div>
+          <div>
+            <div class="footer__contact-num__title">Phone Number</div>
+            <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
+          </div>
+        </div>
+        <div class="footer__contact-num">
+          <div class="icon">
+            <img src="./public/icon/location_icon 1.svg" alt="location icon"></img>
+          </div>
+          <div>
+            <div class="footer__contact-num__title">Phone Number</div>
+            <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <article class="footer__cr-text">
+      <p>Copyright joanalemany26@gmail.com - 2024</p>
+      <p>Terms of use | Privacy Environmental Policy</p>
+    </article>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="scripts/swiper-init.js"></script>
 </body>
+
 </html>

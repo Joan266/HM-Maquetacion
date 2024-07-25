@@ -59,6 +59,9 @@
       font-weight: 700;
       color: #2222220A;
     }
+    .swiper-slide__num--black {
+      color: #222222;
+    }
     .swiper-slide__icon {
       position: absolute;
       top: 23%;
@@ -72,11 +75,24 @@
       font-family: $font-old-standard-tt;
       color: #222222;
     }
-    .text {
+    .swiper-slide__title--white {
+      color: #FFFFFF;
+    }
+    .swiper-slide__text {
+      font-family: $font-roboto;
+      font-size: 0.65rem;
+      line-height: 1.8;
       margin-top: 1.5em;
       color: #777777;
       max-width: 18em;
+      margin-bottom: 3em;
     }
+    .swiper-slide__text--white {
+      color:#FFFFFF
+    }
+  }
+  .swiper-slide--black {
+    background-color: #292929;
   }
 }
 .swiper--food {
@@ -254,11 +270,15 @@
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(2, 1fr);
     gap: 1.5em; 
+    .swiper-slide {
+      .swiper-slide__title {
+        font-size: 1.5rem;
+      }
+    }
   }
   .swiper--facilities {
     display: none;
   }
-
   .swiper--menu{
     .swiper-wrapper {
       padding-right: 1em;
