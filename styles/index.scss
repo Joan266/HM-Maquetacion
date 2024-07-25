@@ -5,20 +5,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
-html, * { box-sizing: border-box; margin: 0; padding: 0 }
-body { min-width: 320px }
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+body {
+  min-width: 320px
+}
 
 
 a {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 
 
 input[type="date"] {
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
-  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: none;
   background: none;
   padding: 0;
@@ -30,17 +38,19 @@ input[type="date"] {
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none; 
+  display: none;
 }
 
 main {
   width: 100%;
+
   section {
     width: 100%;
     margin-bottom: 6em;
     position: relative;
   }
 }
+
 .title {
   color: #222222;
   font-family: $font-old-standard-tt;
@@ -48,12 +58,21 @@ main {
   font-weight: 400;
   margin: 0.4em 0;
 }
+
 .subtitle {
   color: #777777;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-family: $font-archivo;
   font-weight: 700;
   letter-spacing: 0.15em;
+}
+
+.subtitle--black {
+  color: #222222;
+}
+
+.subtitle--white {
+  color: #FFFFFF;
 }
 
 .text {
@@ -62,9 +81,10 @@ main {
   font-size: 0.65rem;
   line-height: 1.8;
   color: #777777;
-  max-width: 18em;
+  max-width: 20em;
 }
-.button{
+
+.button {
   border: none;
   background-color: $beige-tan;
   padding: 1em 2em;
@@ -73,12 +93,14 @@ main {
   font-weight: 700;
   margin-top: 1em;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07); 
+  box-shadow: 1px 5px 9px rgba(0, 0, 0, 0.09);
 }
-.button--black{
+
+.button--black {
   border: 2px solid #FFFFFF54;
   background-color: transparent;
 }
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -94,9 +116,11 @@ main {
   justify-content: center;
   background-color: white;
 }
+
 .icon--twitter {
   background-color: $beige-tan;
 }
+
 .icon--logo {
   box-shadow: 0px 14px 24px 0px #8B8B8B40;
   height: 2em;
@@ -104,8 +128,10 @@ main {
   margin-right: 0.25em;
   font-family: $font-archivo;
 }
+
 .logo--footer {
   margin-bottom: 2em;
+
   .icon--logo {
     background-color: $beige-tan;
     height: 2.35em;
@@ -115,41 +141,59 @@ main {
     color: white;
     font-size: 1.4rem;
   }
-  img{
+
+  img {
     height: 1.9em;
     width: auto;
   }
 }
+
 .page-intro {
-  position:relative;
-  background-color: #333333;
-  padding: 2em 1em;
-  padding-bottom: 4em;
+  position: relative;
+  padding: 4em 1em;
   margin-bottom: 2em;
-  h1,h2 {
-    color: #FFFFFF;
+  background-color: transparent;
+
+  h1,
+  h2 {
+    color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    z-index: -1;
   }
 }
+
 .page-intro__path-info {
   background-color: #ffffff;
   color: #333333;
   position: absolute;
-  bottom:0;
-  right:1em;
+  bottom: 0;
+  right: 1em;
   font-family: $font-roboto;
   font-size: small;
   font-weight: 600;
-  padding:1em 1.5em;
-  > span{
+  padding: 1em 1.5em;
+
+  >span {
     color: $beige-tan;
   }
 }
+
 .img-frame {
- width: 100%;
- height: 12em;
- background-color: gainsboro;
- margin-bottom: 1em;
+  width: 100%;
+  height: 12em;
+  background-color: gainsboro;
+  margin-bottom: 1em;
 }
+
 .big-p {
   font-family: $font-old-standard-tt;
   font-size: x-large;
@@ -157,22 +201,56 @@ main {
   margin: 1em 0;
   line-height: 1.4;
 }
+
 @media only screen and (min-width: 1000px) {
-  main{
-    section{
+  main {
+    section {
       padding: 0 5%;
     }
   }
+
+  .button {
+    margin-top: 1.5em;
+  }
+
   .title {
     font-size: 3rem;
   }
+
   .subtitle {
     font-size: 0.75rem;
   }
+
+  .page-intro {
+    margin-bottom: 3em;
+    padding: 0 13em;
+    padding-top: 5em;
+    padding-bottom: 2em;
+  }
+
+  .page-intro__path-info {
+    right: 14em;
+  }
+
+  .img-frame {
+    height: 22em;
+  }
+
+  .big-p {
+    min-width: 20em;
+    padding: 0 1.5em;
+    font-size: 2.3rem;
+  }
+
+  .text {
+    max-width: 27em;
+    font-size: 0.7rem;
+  }
 }
+
 @media only screen and (min-width: 1500px) {
-  main{
-    section{
+  main {
+    section {
       padding: 0 20%;
     }
   }

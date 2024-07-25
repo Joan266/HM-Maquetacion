@@ -4,8 +4,8 @@
 
 .facilities-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
-  grid-template-rows: repeat(2, 1fr); /* Creates 2 rows with height based on content */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 0;
 }
 
@@ -16,6 +16,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0.5em 0 1.5em 0;
+}
+
+.facilities-grid__cell--exception {
+  display: none;
+}
+
+.facilities-grid__cell--tan {
+  background-color: #BEAD8E;
 }
 
 .facilities-grid__cell__icon {
@@ -25,7 +34,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  color: #FFFFFF;
+  background-color: transparent;
 }
 
 .about-us__restaurant {
@@ -42,4 +52,39 @@
   font-size: 1.9rem;
   font-weight: 400;
   margin: 0.4em 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  .about-us {
+    padding: 0 1em;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .about-us__restaurant {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-top: 2em;
+    padding: 1em 1.5em;
+  }
+  .about-us__restaurant .img-frame {
+    margin: 0;
+  }
+  .about-us__title {
+    margin-top: 0.6em;
+    margin-bottom: 0.8em;
+    font-size: 1.6rem;
+  }
+  .about-us__restaurant__info {
+    padding: 1em 0;
+  }
+  .facilities-grid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 0;
+    margin: 3em 0;
+  }
+  .facilities-grid__cell--exception {
+    display: flex;
+  }
 }/*# sourceMappingURL=about-us.css.map */

@@ -513,7 +513,8 @@
     margin-top: 0.7em;
   }
 }
-html, * {
+html,
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -565,10 +566,18 @@ main section {
 
 .subtitle {
   color: #777777;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   letter-spacing: 0.15em;
+}
+
+.subtitle--black {
+  color: #222222;
+}
+
+.subtitle--white {
+  color: #FFFFFF;
 }
 
 .text {
@@ -577,7 +586,7 @@ main section {
   font-size: 0.65rem;
   line-height: 1.8;
   color: #777777;
-  max-width: 18em;
+  max-width: 20em;
 }
 
 .button {
@@ -589,7 +598,7 @@ main section {
   font-weight: 700;
   margin-top: 1em;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: 1px 5px 9px rgba(0, 0, 0, 0.09);
 }
 
 .button--black {
@@ -644,13 +653,23 @@ main section {
 
 .page-intro {
   position: relative;
-  background-color: #333333;
-  padding: 2em 1em;
-  padding-bottom: 4em;
+  padding: 4em 1em;
   margin-bottom: 2em;
+  background-color: transparent;
 }
-.page-intro h1, .page-intro h2 {
-  color: #FFFFFF;
+.page-intro h1,
+.page-intro h2 {
+  color: #ffffff;
+}
+.page-intro::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+  z-index: -1;
 }
 
 .page-intro__path-info {
@@ -687,11 +706,35 @@ main section {
   main section {
     padding: 0 5%;
   }
+  .button {
+    margin-top: 1.5em;
+  }
   .title {
     font-size: 3rem;
   }
   .subtitle {
     font-size: 0.75rem;
+  }
+  .page-intro {
+    margin-bottom: 3em;
+    padding: 0 13em;
+    padding-top: 5em;
+    padding-bottom: 2em;
+  }
+  .page-intro__path-info {
+    right: 14em;
+  }
+  .img-frame {
+    height: 22em;
+  }
+  .big-p {
+    min-width: 20em;
+    padding: 0 1.5em;
+    font-size: 2.3rem;
+  }
+  .text {
+    max-width: 27em;
+    font-size: 0.7rem;
   }
 }
 @media only screen and (min-width: 1500px) {
