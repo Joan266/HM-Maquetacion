@@ -54,6 +54,41 @@
   margin: 0.4em 0;
 }
 
+.counter {
+  padding: 0 1em;
+  text-align: left;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  padding: 2em;
+}
+
+.facts__item {
+  width: 100%;
+  display: flex;
+  gap: 1.5em;
+  justify-content: left;
+  flex-direction: row;
+  align-items: center;
+}
+
+.facts__item__title {
+  font-family: "Old Standard TT", serif;
+  color: #222222;
+  font-size: 2.7rem;
+  font-weight: 400;
+}
+
+.facts__item__subtitle {
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
 @media only screen and (min-width: 1000px) {
   .about-us {
     padding: 0 1em;
@@ -87,5 +122,13 @@
   }
   .facilities-grid__cell--exception {
     display: flex;
+  }
+  .counter {
+    padding: 4em 0;
+    max-width: 950px;
+    margin: auto;
+  }
+  .facts {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=about-us.css.map */

@@ -56,6 +56,40 @@
   margin: 0.4em 0;
 }
 
+.counter {
+  padding: 0 1em;
+  text-align: left;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  padding: 2em;
+}
+
+.facts__item {
+  width: 100%;
+  display: flex;
+  gap: 1.5em;
+  justify-content: left;
+  flex-direction: row;
+  align-items: center;
+}
+
+.facts__item__title {
+  font-family: $font-old-standard-tt;
+  color: #222222;
+  font-size: 2.7rem;
+  font-weight: 400;
+}
+
+.facts__item__subtitle {
+  color: #999999;
+  font-family: $font-roboto;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
 
 @media only screen and (min-width: 1000px) {
   .about-us {
@@ -67,22 +101,26 @@
 
   .about-us__restaurant {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     gap: 2em;
     margin-top: 2em;
     padding: 1em 1.5em;
+
     .img-frame {
       margin: 0;
     }
   }
+
   .about-us__title {
     margin-top: 0.6em;
     margin-bottom: 0.8em;
     font-size: 1.6rem;
   }
+
   .about-us__restaurant__info {
     padding: 1em 0;
   }
+
   .facilities-grid {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -93,4 +131,15 @@
   .facilities-grid__cell--exception {
     display: flex;
   }
+
+  .counter {
+    padding: 4em 0;
+    max-width: 950px;
+    margin: auto;
+  }
+
+  .facts {
+    flex-direction: row;
+  }
+
 }
