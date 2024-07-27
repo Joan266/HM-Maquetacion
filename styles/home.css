@@ -342,7 +342,10 @@
   }
   .stats__content {
     flex-direction: row;
-    padding: 2em 0.5em;
+    padding: 5em 7em;
+    gap: 1em;
+    margin-bottom: 0;
+    margin-top: 7em;
   }
   .food-menu {
     padding: 0 5%;

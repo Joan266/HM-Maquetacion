@@ -285,6 +285,9 @@
   .swiper--facilities {
     display: none;
   }
+  .swiper--menu {
+    margin-bottom: 0;
+  }
   .swiper--menu .swiper-wrapper {
     padding-right: 1em;
     margin-right: 1em;
