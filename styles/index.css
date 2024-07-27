@@ -1,163 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
-.header {
-  position: fixed;
-  width: 100%;
-  height: 4em;
-  display: flex;
-  top: 0;
-  left: 0;
-  flex: row;
-  padding: 0 0.75em;
-  z-index: 3;
-  background-color: white;
-}
-
-.header__container {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  width: 50%;
-  align-items: center;
-  gap: 0.5em;
-}
-
-.header__container--left {
-  justify-content: left;
-}
-
-.header__container--right {
-  justify-content: right;
-}
-
-.footer {
-  width: 100%;
-}
-
-.footer__info {
-  background-image: url("../public/img/patrondereja.webp");
-  background-repeat: repeat;
-  background-size: auto;
-  position: relative;
-  padding: 1.5em 5% 0.01em 5%;
-}
-.footer__info p {
-  font-size: 0.75rem;
-  font-family: "Archivo", sans-serif;
-  line-height: 1.5;
-  color: #777777;
-  max-width: 20em;
-}
-
-.footer__media {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.25em;
-  margin-top: 1em;
-}
-
-.footer__subtitle {
-  font-family: "Old Standard TT", serif;
-  font-size: 1.2rem;
-  margin-top: 1.5em;
-  margin-bottom: 1.25em;
-}
-
-.footer__info__services ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5em;
-  list-style-type: none;
-  margin-top: 1em;
-}
-.footer__info__services ul li {
-  font-family: "Roboto", sans-serif;
-  color: #777777;
-  font-size: 0.75rem;
-  position: relative;
-  padding: 0.25em 0;
-  padding-left: 1em;
-}
-.footer__info__services ul li::before {
-  content: "+";
-  position: absolute;
-  left: 0;
-  color: #BEAD8E;
-}
-
-.footer__contact-num {
-  display: flex;
-  flex-direction: row;
-  gap: 1.25em;
-  margin: 2em 0;
-}
-
-.footer__contact-num__title {
-  font-family: "Old Standard TT", serif;
-  font-size: 1rem;
-  color: #222222;
-}
-
-.footer__contact-num__subtitle {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.75rem;
-  color: #777777;
-}
-
-.footer__cr-text {
-  background-color: #F8F8F8;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 0.01em 5%;
-}
-.footer__cr-text p {
-  margin: 1em 0;
-}
-
-@media only screen and (min-width: 1000px) {
-  .footer__cr-text {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 5%;
-  }
-  .footer__info {
-    display: flex;
-    flex-direction: row;
-    padding: 0 5%;
-    padding-top: 4em;
-    padding-bottom: 1em;
-    gap: 1.5em;
-  }
-  .footer__info__about {
-    flex: 2;
-  }
-  .footer__info__about p {
-    max-width: 20em;
-  }
-  .footer__info__services {
-    flex: 2;
-  }
-  .footer__info__contact {
-    flex: 1;
-    min-width: 12em;
-  }
-  .footer__subtitle {
-    margin-top: 0;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .footer__cr-text {
-    padding: 1em 20%;
-  }
-  .footer__info {
-    padding: 0 20%;
-    padding-top: 4em;
-    padding-bottom: 1em;
-  }
-}
 .non-swiper {
   display: none;
 }
@@ -206,19 +47,23 @@
   display: none;
 }
 
-.swiper--facilities, .non-swiper--facilities {
+.swiper--facilities,
+.non-swiper--facilities {
   max-width: 25em;
   text-align: center;
 }
-.swiper--facilities .swiper-wrapper, .non-swiper--facilities .swiper-wrapper {
+.swiper--facilities .swiper-wrapper,
+.non-swiper--facilities .swiper-wrapper {
   margin-bottom: 18%;
 }
-.swiper--facilities .swiper-slide, .non-swiper--facilities .swiper-slide {
+.swiper--facilities .swiper-slide,
+.non-swiper--facilities .swiper-slide {
   padding: 0 1.5em;
   padding-top: 9.5em;
   text-align: left;
 }
-.swiper--facilities .swiper-slide .swiper-slide__num, .non-swiper--facilities .swiper-slide .swiper-slide__num {
+.swiper--facilities .swiper-slide .swiper-slide__num,
+.non-swiper--facilities .swiper-slide .swiper-slide__num {
   position: absolute;
   top: 0;
   right: 0.1em;
@@ -227,26 +72,31 @@
   font-weight: 700;
   color: rgba(34, 34, 34, 0.0392156863);
 }
-.swiper--facilities .swiper-slide .swiper-slide__num--black, .non-swiper--facilities .swiper-slide .swiper-slide__num--black {
+.swiper--facilities .swiper-slide .swiper-slide__num--black,
+.non-swiper--facilities .swiper-slide .swiper-slide__num--black {
   color: #222222;
 }
-.swiper--facilities .swiper-slide .swiper-slide__icon, .non-swiper--facilities .swiper-slide .swiper-slide__icon {
+.swiper--facilities .swiper-slide .swiper-slide__icon,
+.non-swiper--facilities .swiper-slide .swiper-slide__icon {
   position: absolute;
   top: 23%;
   left: 1em;
   height: 4.1em;
   width: 4.1em;
 }
-.swiper--facilities .swiper-slide .swiper-slide__title, .non-swiper--facilities .swiper-slide .swiper-slide__title {
+.swiper--facilities .swiper-slide .swiper-slide__title,
+.non-swiper--facilities .swiper-slide .swiper-slide__title {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Old Standard TT", serif;
   color: #222222;
 }
-.swiper--facilities .swiper-slide .swiper-slide__title--white, .non-swiper--facilities .swiper-slide .swiper-slide__title--white {
+.swiper--facilities .swiper-slide .swiper-slide__title--white,
+.non-swiper--facilities .swiper-slide .swiper-slide__title--white {
   color: #FFFFFF;
 }
-.swiper--facilities .swiper-slide .swiper-slide__text, .non-swiper--facilities .swiper-slide .swiper-slide__text {
+.swiper--facilities .swiper-slide .swiper-slide__text,
+.non-swiper--facilities .swiper-slide .swiper-slide__text {
   font-family: "Roboto", sans-serif;
   font-size: 0.65rem;
   line-height: 1.8;
@@ -255,20 +105,25 @@
   max-width: 18em;
   margin-bottom: 3em;
 }
-.swiper--facilities .swiper-slide .swiper-slide__text--white, .non-swiper--facilities .swiper-slide .swiper-slide__text--white {
+.swiper--facilities .swiper-slide .swiper-slide__text--white,
+.non-swiper--facilities .swiper-slide .swiper-slide__text--white {
   color: #FFFFFF;
 }
-.swiper--facilities .swiper-slide--black, .non-swiper--facilities .swiper-slide--black {
+.swiper--facilities .swiper-slide--black,
+.non-swiper--facilities .swiper-slide--black {
   background-color: #292929;
 }
 
-.swiper--food {
+.swiper--food,
+.swiper--counter {
   max-width: 25em;
 }
-.swiper--food .swiper-slide {
+.swiper--food .swiper-slide,
+.swiper--counter .swiper-slide {
   height: auto;
 }
-.swiper--food .swiper-slide__img {
+.swiper--food .swiper-slide__img,
+.swiper--counter .swiper-slide__img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -495,10 +350,12 @@
     left: auto;
     right: 3em;
   }
-  .swiper--food {
+  .swiper--food,
+  .swiper--counter {
     display: none;
   }
-  .non-swiper--food {
+  .non-swiper--food,
+  .non-swiper--counter {
     display: flex;
     flex-direction: row;
     gap: 1em;
@@ -506,12 +363,14 @@
     justify-content: center;
     height: 16em;
   }
-  .non-swiper--food .non-swiper__item {
+  .non-swiper--food .non-swiper__item,
+  .non-swiper--counter .non-swiper__item {
     position: relative;
     flex: 1;
     background-color: #777777;
   }
-  .non-swiper--food .non-swiper__item img {
+  .non-swiper--food .non-swiper__item img,
+  .non-swiper--counter .non-swiper__item img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -533,6 +392,165 @@
     margin-left: 0.75em;
     width: 45%;
     margin-top: 0.7em;
+  }
+}
+.header {
+  position: fixed;
+  width: 100%;
+  height: 4em;
+  display: flex;
+  top: 0;
+  left: 0;
+  flex: row;
+  padding: 0 0.75em;
+  z-index: 3;
+  background-color: white;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.header__container--left {
+  justify-content: left;
+}
+
+.header__container--right {
+  justify-content: right;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer__info {
+  background-image: url("../public/img/patrondereja.webp");
+  background-repeat: repeat;
+  background-size: auto;
+  position: relative;
+  padding: 1.5em 5% 0.01em 5%;
+}
+.footer__info p {
+  font-size: 0.75rem;
+  font-family: "Archivo", sans-serif;
+  line-height: 1.5;
+  color: #777777;
+  max-width: 20em;
+}
+
+.footer__media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25em;
+  margin-top: 1em;
+}
+
+.footer__subtitle {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.2rem;
+  margin-top: 1.5em;
+  margin-bottom: 1.25em;
+}
+
+.footer__info__services ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5em;
+  list-style-type: none;
+  margin-top: 1em;
+}
+.footer__info__services ul li {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-size: 0.75rem;
+  position: relative;
+  padding: 0.25em 0;
+  padding-left: 1em;
+}
+.footer__info__services ul li::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  color: #BEAD8E;
+}
+
+.footer__contact-num {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25em;
+  margin: 2em 0;
+}
+
+.footer__contact-num__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 1rem;
+  color: #222222;
+}
+
+.footer__contact-num__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  color: #777777;
+}
+
+.footer__cr-text {
+  background-color: #F8F8F8;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.01em 5%;
+}
+.footer__cr-text p {
+  margin: 1em 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer__cr-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5%;
+  }
+  .footer__info {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5%;
+    padding-top: 4em;
+    padding-bottom: 1em;
+    gap: 1.5em;
+  }
+  .footer__info__about {
+    flex: 2;
+  }
+  .footer__info__about p {
+    max-width: 20em;
+  }
+  .footer__info__services {
+    flex: 2;
+  }
+  .footer__info__contact {
+    flex: 1;
+    min-width: 12em;
+  }
+  .footer__subtitle {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .footer__cr-text {
+    padding: 1em 20%;
+  }
+  .footer__info {
+    padding: 0 20%;
+    padding-top: 4em;
+    padding-bottom: 1em;
   }
 }
 html,

@@ -46,19 +46,23 @@
   display: none;
 }
 
-.swiper--facilities, .non-swiper--facilities {
+.swiper--facilities,
+.non-swiper--facilities {
   max-width: 25em;
   text-align: center;
 }
-.swiper--facilities .swiper-wrapper, .non-swiper--facilities .swiper-wrapper {
+.swiper--facilities .swiper-wrapper,
+.non-swiper--facilities .swiper-wrapper {
   margin-bottom: 18%;
 }
-.swiper--facilities .swiper-slide, .non-swiper--facilities .swiper-slide {
+.swiper--facilities .swiper-slide,
+.non-swiper--facilities .swiper-slide {
   padding: 0 1.5em;
   padding-top: 9.5em;
   text-align: left;
 }
-.swiper--facilities .swiper-slide .swiper-slide__num, .non-swiper--facilities .swiper-slide .swiper-slide__num {
+.swiper--facilities .swiper-slide .swiper-slide__num,
+.non-swiper--facilities .swiper-slide .swiper-slide__num {
   position: absolute;
   top: 0;
   right: 0.1em;
@@ -67,26 +71,31 @@
   font-weight: 700;
   color: rgba(34, 34, 34, 0.0392156863);
 }
-.swiper--facilities .swiper-slide .swiper-slide__num--black, .non-swiper--facilities .swiper-slide .swiper-slide__num--black {
+.swiper--facilities .swiper-slide .swiper-slide__num--black,
+.non-swiper--facilities .swiper-slide .swiper-slide__num--black {
   color: #222222;
 }
-.swiper--facilities .swiper-slide .swiper-slide__icon, .non-swiper--facilities .swiper-slide .swiper-slide__icon {
+.swiper--facilities .swiper-slide .swiper-slide__icon,
+.non-swiper--facilities .swiper-slide .swiper-slide__icon {
   position: absolute;
   top: 23%;
   left: 1em;
   height: 4.1em;
   width: 4.1em;
 }
-.swiper--facilities .swiper-slide .swiper-slide__title, .non-swiper--facilities .swiper-slide .swiper-slide__title {
+.swiper--facilities .swiper-slide .swiper-slide__title,
+.non-swiper--facilities .swiper-slide .swiper-slide__title {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Old Standard TT", serif;
   color: #222222;
 }
-.swiper--facilities .swiper-slide .swiper-slide__title--white, .non-swiper--facilities .swiper-slide .swiper-slide__title--white {
+.swiper--facilities .swiper-slide .swiper-slide__title--white,
+.non-swiper--facilities .swiper-slide .swiper-slide__title--white {
   color: #FFFFFF;
 }
-.swiper--facilities .swiper-slide .swiper-slide__text, .non-swiper--facilities .swiper-slide .swiper-slide__text {
+.swiper--facilities .swiper-slide .swiper-slide__text,
+.non-swiper--facilities .swiper-slide .swiper-slide__text {
   font-family: "Roboto", sans-serif;
   font-size: 0.65rem;
   line-height: 1.8;
@@ -95,20 +104,25 @@
   max-width: 18em;
   margin-bottom: 3em;
 }
-.swiper--facilities .swiper-slide .swiper-slide__text--white, .non-swiper--facilities .swiper-slide .swiper-slide__text--white {
+.swiper--facilities .swiper-slide .swiper-slide__text--white,
+.non-swiper--facilities .swiper-slide .swiper-slide__text--white {
   color: #FFFFFF;
 }
-.swiper--facilities .swiper-slide--black, .non-swiper--facilities .swiper-slide--black {
+.swiper--facilities .swiper-slide--black,
+.non-swiper--facilities .swiper-slide--black {
   background-color: #292929;
 }
 
-.swiper--food {
+.swiper--food,
+.swiper--counter {
   max-width: 25em;
 }
-.swiper--food .swiper-slide {
+.swiper--food .swiper-slide,
+.swiper--counter .swiper-slide {
   height: auto;
 }
-.swiper--food .swiper-slide__img {
+.swiper--food .swiper-slide__img,
+.swiper--counter .swiper-slide__img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -335,10 +349,12 @@
     left: auto;
     right: 3em;
   }
-  .swiper--food {
+  .swiper--food,
+  .swiper--counter {
     display: none;
   }
-  .non-swiper--food {
+  .non-swiper--food,
+  .non-swiper--counter {
     display: flex;
     flex-direction: row;
     gap: 1em;
@@ -346,12 +362,14 @@
     justify-content: center;
     height: 16em;
   }
-  .non-swiper--food .non-swiper__item {
+  .non-swiper--food .non-swiper__item,
+  .non-swiper--counter .non-swiper__item {
     position: relative;
     flex: 1;
     background-color: #777777;
   }
-  .non-swiper--food .non-swiper__item img {
+  .non-swiper--food .non-swiper__item img,
+  .non-swiper--counter .non-swiper__item img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
