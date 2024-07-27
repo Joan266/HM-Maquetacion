@@ -1,0 +1,134 @@
+.about-us {
+  padding: 0 1em;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+}
+
+.facilities-grid__cell {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5em 0 1.5em 0;
+}
+
+.facilities-grid__cell--exception {
+  display: none;
+}
+
+.facilities-grid__cell--tan {
+  background-color: #BEAD8E;
+}
+
+.facilities-grid__cell__icon {
+  width: 6em;
+  height: 6em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+.about-us__restaurant {
+  margin: 1em 0;
+  padding: 1em;
+  background-color: white;
+  border-radius: 0.3em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.about-us__title {
+  color: #222222;
+  font-family: "Old Standard TT", serif;
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin: 0.4em 0;
+}
+
+.counter {
+  padding: 0 1em;
+  text-align: left;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  padding: 2em;
+}
+
+.facts__item {
+  width: 100%;
+  display: flex;
+  gap: 1.5em;
+  justify-content: left;
+  flex-direction: row;
+  align-items: center;
+}
+
+.facts__item__title {
+  font-family: "Old Standard TT", serif;
+  color: #222222;
+  font-size: 2.7rem;
+  font-weight: 400;
+}
+
+.facts__item__subtitle {
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 1000px) {
+  .about-us {
+    padding: 0 1em;
+    max-width: 950px;
+    margin: 0 auto;
+    margin-bottom: 5em;
+  }
+  .about-us__restaurant {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-top: 2em;
+    padding: 1em 1.5em;
+  }
+  .about-us__restaurant .img-frame {
+    margin: 0;
+  }
+  .about-us__title {
+    margin-top: 0.6em;
+    margin-bottom: 0.8em;
+    font-size: 1.6rem;
+  }
+  .about-us__restaurant__info {
+    padding: 1em 0;
+  }
+  .facilities-grid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 0;
+    margin: 3em 0;
+  }
+  .facilities-grid__cell--exception {
+    display: flex;
+  }
+  .counter {
+    padding: 4em 0;
+    max-width: 950px;
+    margin: auto;
+  }
+  .facts {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=about-us.css.map */

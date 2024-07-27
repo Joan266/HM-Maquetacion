@@ -1,4 +1,13 @@
 
+let counterSwiper = new Swiper(".swiper--counter", {
+  slidesPerView: 1,
+  initialSlide: 1, 
+  loop:true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
 let foodSwiper = new Swiper(".swiper--food", {
   slidesPerView: 1,
   initialSlide: 1, 

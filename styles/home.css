@@ -45,10 +45,6 @@
   display: none;
 }
 
-.facilities {
-  padding: 0 5%;
-}
-
 .rooms {
   text-align: center;
 }
@@ -166,16 +162,15 @@
   padding-top: 3.5em;
   position: relative;
 }
-.intro h1, .intro h2, .intro label {
+.intro h1,
+.intro h2,
+.intro label {
   color: #FFFFFF;
 }
 .intro h1 {
   max-width: 60%;
   line-height: 1.4;
   margin-bottom: 2em;
-}
-.intro .button--black {
-  margin-left: 1em;
 }
 .intro form {
   margin-top: 3em;
@@ -241,6 +236,9 @@
   .intro {
     position: relative;
     padding-top: 10em;
+  }
+  .intro .button--black {
+    margin-left: 1em;
   }
   .intro h2 {
     font-size: 4rem;
@@ -344,14 +342,14 @@
   }
   .stats__content {
     flex-direction: row;
-    padding: 2em 0.5em;
+    padding: 5em 7em;
+    gap: 1em;
+    margin-bottom: 0;
+    margin-top: 7em;
   }
   .food-menu {
     padding: 0 5%;
     padding-top: 12em;
-  }
-  .facilities {
-    padding: 0 5%;
   }
   .food-menu__donut--1 {
     display: none;
@@ -377,9 +375,6 @@
   .food-menu {
     padding: 0 20%;
     padding-top: 12em;
-  }
-  .facilities {
-    padding: 0 20%;
   }
   .food-menu__donut--2 {
     left: 5%;
