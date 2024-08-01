@@ -1,0 +1,84 @@
+.rooms {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+}
+
+.rooms__pagination {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.rooms__pagination > img {
+  max-width: 30%;
+}
+
+.rooms__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.rooms__grid__item {
+  max-width: 18em;
+  position: relative;
+  text-align: center;
+}
+
+.rooms__grid__item__features {
+  position: relative;
+  width: 100%;
+}
+
+.rooms__grid__item__features__icons {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 55%);
+}
+
+.rooms__grid__item__features__img {
+  width: 100%;
+}
+
+.rooms__grid__item__description {
+  padding: 2em 0.5em;
+}
+
+.rooms__grid__item__description__title {
+  font-weight: 400;
+  font-family: "Old Standard TT", serif;
+  color: #222222;
+  font-size: 1.1rem;
+}
+
+.rooms__grid__item__description__text {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.7em;
+  margin-top: 1.2em;
+  font-size: 0.6rem;
+  line-height: 1.8;
+  color: #777777;
+}
+
+.rooms__grid__item__description__price {
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  color: #BEAD8E;
+  font-size: 0.75rem;
+}
+.rooms__grid__item__description__price > span {
+  font-size: 0.65rem;
+}
+
+.rooms__grid__item__description__booking {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #BDBDBD;
+  margin-left: 1em;
+}/*# sourceMappingURL=rooms.css.map */
