@@ -1,0 +1,65 @@
+.room {
+  padding: 0 1em;
+}
+
+.room__price {
+  font-family: "Archivo", sans-serif;
+  color: #BEAD8E;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.room__price > span {
+  font-size: 0.8rem;
+}
+
+.room__img {
+  margin-top: 1em;
+  width: 100%;
+  height: auto;
+}
+
+form {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 0 1.25em;
+  display: block;
+  text-align: left;
+}
+form > h5 {
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+  margin-left: 3.5em;
+  margin-bottom: 2em;
+}
+form label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  width: 100%;
+  color: #222222;
+}
+form .date-input-container {
+  position: relative;
+  margin-top: 0.7em;
+  margin-bottom: 1.5em;
+}
+form .date-input-container input {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  color: #777777;
+  background-color: #F8F8F8;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  height: 3em;
+  padding-left: 1.5em;
+}
+form .date-input-container::after {
+  content: url(/public/icon/calendar_icon\ 2.svg);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=roomdetails.css.map */
