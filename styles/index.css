@@ -626,6 +626,14 @@ main section {
   color: #FFFFFF;
 }
 
+.title--small {
+  font-size: 1.4rem;
+}
+
+.title--medium {
+  font-size: 1.9rem;
+}
+
 .subtitle {
   color: #777777;
   font-size: 0.65rem;
@@ -640,6 +648,10 @@ main section {
 
 .subtitle--white {
   color: #FFFFFF;
+}
+
+.subtitle--golden {
+  color: #BEAD8E;
 }
 
 .text {

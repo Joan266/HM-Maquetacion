@@ -81,6 +81,12 @@ main {
 .title--white {
   color: #FFFFFF;
 }
+.title--small {
+  font-size: 1.4rem;
+}
+.title--medium {
+  font-size: 1.9rem;
+}
 
 .subtitle {
   color: #777777;
@@ -96,6 +102,9 @@ main {
 
 .subtitle--white {
   color: #FFFFFF;
+}
+.subtitle--golden {
+  color: $beige-tan;
 }
 
 .text {
