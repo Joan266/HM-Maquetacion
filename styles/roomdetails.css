@@ -62,4 +62,23 @@ form .date-input-container::after {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.amenities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  border-top: 1px solid #F1F1F1;
+  padding-top: 2em;
+}
+
+.amenities__item {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-size: 0.7rem;
+}
+.amenities__item > img {
+  margin-top: 0.1em;
+  margin-right: 0.5em;
 }/*# sourceMappingURL=roomdetails.css.map */
