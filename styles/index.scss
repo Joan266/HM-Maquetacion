@@ -73,7 +73,7 @@ main {
 .title {
   color: #222222;
   font-family: $font-old-standard-tt;
-  font-size: 2.75rem;
+  font-size: 2.65rem;
   font-weight: 400;
   margin: 0.4em 0;
 }
@@ -81,11 +81,14 @@ main {
 .title--white {
   color: #FFFFFF;
 }
+.title--smaller {
+  font-size: 1.2rem;
+}
 .title--small {
   font-size: 1.4rem;
 }
 .title--medium {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 
 .subtitle {
@@ -185,7 +188,7 @@ main {
 
 .page-intro {
   position: relative;
-  padding: 4em 1em;
+  padding: 4em 0;
   margin-bottom: 2em;
   background-color: transparent;
 
@@ -212,11 +215,11 @@ main {
   color: #333333;
   position: absolute;
   bottom: 0;
-  right: 1em;
+  right: 0;
   font-family: $font-roboto;
-  font-size: small;
+  font-size: 0.7rem;
   font-weight: 600;
-  padding: 1em 1.5em;
+  padding: 1em 2em;
 
   >span {
     color: $beige-tan;

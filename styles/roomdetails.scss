@@ -8,10 +8,10 @@
   font-family: $font-archivo;
   color: $beige-tan;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.45rem;
 
   >span {
-    font-size: 0.7rem;
+    font-size: 0.55rem;
     font-weight: 500;
   }
 }
@@ -131,15 +131,16 @@ form {
   justify-content: center;
   align-items: center;
 }
-.cancellation{
-  >h3{
+
+.cancellation {
+  >h3 {
     border-bottom: 1px solid #F1F1F1;
     padding-bottom: 0.4em;
   }
 }
 
-.related-rooms{
-  >h3{
+.related-rooms {
+  >h3 {
     border-bottom: 1px solid #F1F1F1;
     padding-bottom: 0.4em;
   }
