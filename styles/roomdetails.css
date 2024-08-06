@@ -29,21 +29,21 @@ form {
 form > h5 {
   font-weight: 700;
   font-family: "Archivo", sans-serif;
-  font-size: 0.9rem;
-  margin-left: 3.5em;
-  margin-bottom: 2em;
+  font-size: 0.85rem;
+  margin-left: 3em;
+  margin-bottom: 1em;
 }
 form label {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   width: 100%;
   color: #222222;
 }
 form .date-input-container {
   position: relative;
-  margin-top: 0.7em;
-  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 form .date-input-container input {
   cursor: pointer;
@@ -130,4 +130,41 @@ form .date-input-container::after {
 .related-rooms > h3 {
   border-bottom: 1px solid #F1F1F1;
   padding-bottom: 0.4em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .room {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .room__container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-between;
+  }
+  .room__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    transform: translate(0, -30%);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+    background-color: white;
+  }
+  .room__img {
+    max-width: 29em;
+    position: relative;
+  }
+  .room__img > img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=roomdetails.css.map */
