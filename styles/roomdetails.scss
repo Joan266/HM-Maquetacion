@@ -3,7 +3,9 @@
 .room {
   padding: 0 1em;
 }
-
+.room__header {
+  margin-bottom:1em;
+}
 .room__price {
   font-family: $font-archivo;
   color: $beige-tan;
@@ -20,9 +22,14 @@
   margin-top: 1em;
   width: 100%;
   height: auto;
+  >img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
-form {
+.room__form {
   margin-top: 2em;
   margin-bottom: 2em;
   padding: 0 1.25em;
@@ -71,10 +78,19 @@ form {
     top: 50%;
     transform: translateY(-50%);
   }
-
+ .button {
+  width: 100%;
+ }
 }
 
-.amenities {
+.room__form--desktop {
+  display: none;
+}
+.room__form--mobile {
+  display: block;
+}
+
+.amenities__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
@@ -154,11 +170,25 @@ form {
     margin-right: auto;
   }
 
-  .room__container {
+  .container {
     display: flex;
     flex-direction: row;
     gap: 1em;
     justify-content: space-between;
+  }
+
+  .room__container {
+    width: 100%;
+    max-width: 29em;
+  }
+
+  .room__form--mobile {
+    display: none;
+  }
+
+  .room__form--desktop {
+    display: block;
+    margin-top: 1.5em;
   }
 
   .room__header {
@@ -176,13 +206,32 @@ form {
   }
 
   .room__img {
-    max-width: 29em;
     position: relative;
+    width: 100%;
+    margin-bottom: 2em;
 
     >img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+  }
+
+  .amenities {
+    margin-left: 1em;
+  }
+
+  .amenities__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .founder {
+    width: 65%;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+    padding: 3em 2em;
+  }
+
+  .cancellation {
+    margin-left: 1em;
   }
 }

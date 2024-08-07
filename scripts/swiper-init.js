@@ -60,7 +60,7 @@ let relatedRoomsSwiper = new Swiper("related-rooms", {
   },
   breakpoints: {
     1000: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       centeredSlides: true, 
     }
   }
