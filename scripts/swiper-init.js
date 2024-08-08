@@ -51,3 +51,16 @@ let roomsSwiper = new Swiper(".swiper--rooms", {
     }
   }
 });
+let relatedRoomsSwiper = new Swiper(".swiper--related-rooms", {
+  slidesPerView: 1,
+  loop:true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    1000: {
+      slidesPerView: 2
+    }
+  }
+});
