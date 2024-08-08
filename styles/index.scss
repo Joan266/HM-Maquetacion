@@ -129,7 +129,9 @@ main {
 .text--white {
   color: #FFFFFF;
 }
-
+.crossed {
+  text-decoration: line-through;
+}
 .button {
   border: none;
   background-color: $beige-tan;

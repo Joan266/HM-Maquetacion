@@ -1,0 +1,77 @@
+@import './_variables.scss';
+
+.offers {
+  padding: 0 1em;
+}
+
+.offer {
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2em;
+}
+
+.offer__description {
+  padding: 1em;
+  padding-bottom: 2em;
+}
+
+.offer__img {
+  max-height: 10em;
+  position: relative;
+
+  >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.offer__price {
+  position: absolute;
+  right: 5%;
+  bottom: 30%;
+  font-family: $font-archivo;
+  color: $beige-tan;
+  font-weight: 700;
+  font-size: 1.3rem;
+
+  .night {
+    font-size: 0.5rem;
+  }
+}
+
+.offer__price--discount {
+  color: $red;
+  font-size: 1.7rem;
+  transform: translateY(100%);
+
+  >span {
+    font-size: 0.7rem;
+  }
+}
+
+.amenities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  margin: 1em 0;
+}
+
+.amenities__item {
+  font-weight: 500;
+  font-family: $font-roboto;
+  color: #777777;
+  font-size: 0.65rem;
+
+  >img {
+    margin-top: 0.1em;
+    margin-right: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .offers {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

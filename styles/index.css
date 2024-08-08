@@ -732,6 +732,10 @@ main section {
   color: #FFFFFF;
 }
 
+.crossed {
+  text-decoration: line-through;
+}
+
 .button {
   border: none;
   background-color: #BEAD8E;
