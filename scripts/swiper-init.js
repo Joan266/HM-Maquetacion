@@ -51,7 +51,7 @@ let roomsSwiper = new Swiper(".swiper--rooms", {
     }
   }
 });
-let relatedRoomsSwiper = new Swiper("related-rooms", {
+let relatedRoomsSwiper = new Swiper(".swiper--related-rooms", {
   slidesPerView: 1,
   loop:true,
   navigation: {
@@ -60,8 +60,7 @@ let relatedRoomsSwiper = new Swiper("related-rooms", {
   },
   breakpoints: {
     1000: {
-      slidesPerView: 2,
-      centeredSlides: true, 
+      slidesPerView: 2
     }
   }
 });
