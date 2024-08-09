@@ -1,0 +1,79 @@
+@import './_variables.scss';
+
+.contact {
+  padding: 0 1em;
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-options__item {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  margin-bottom: 4em;
+
+  >img {
+    margin-top: 1em;
+  }
+}
+
+.contact-options__item__content {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+
+  .text {
+    margin: 0;
+  }
+}
+
+.contact-options__item__number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: $font-archivo;
+  font-size: 7.5rem;
+  font-weight: 700;
+  transform: translateY(-15%);
+  color: #2222220A;
+}
+
+.contact__img{
+  height: 10em;
+  width: 100%;
+  background-color: gainsboro;
+  >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .contact {
+    padding: 0;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-options {
+    display: flex;
+    flex-direction: row;
+    gap:2em;
+    margin-bottom: 2em;
+  }
+  .contact-options__item {
+    margin-bottom: 0;
+  }
+  .contact__img{
+    height: 30em;
+  }
+}
