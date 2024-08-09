@@ -185,54 +185,69 @@
   top: 9em;
 }
 
+.swiper--popular-rooms {
+  background-color: white;
+  margin-top: 2em;
+}
+
 .swiper--related-rooms {
   width: 100%;
   padding-top: 2em;
   padding-bottom: 10em;
 }
-.swiper--related-rooms .swiper-slide {
-  height: 10em;
+
+.swiper--related-rooms .swiper-slide,
+.swiper--popular-rooms .swiper-slide {
   position: relative;
   text-align: center;
 }
-.swiper--related-rooms .swiper-slide__room-description {
+.swiper--related-rooms .swiper-slide__room-description,
+.swiper--popular-rooms .swiper-slide__room-description {
   position: relative;
   padding: 1em;
 }
-.swiper--related-rooms .swiper-slide__room-description .swiper-slide__room-features {
+.swiper--related-rooms .swiper-slide__room-description .swiper-slide__room-features,
+.swiper--popular-rooms .swiper-slide__room-description .swiper-slide__room-features {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.swiper--related-rooms .swiper-slide__room-description .text {
+.swiper--related-rooms .swiper-slide__room-description .text,
+.swiper--popular-rooms .swiper-slide__room-description .text {
   margin: 0.7em 0;
 }
-.swiper--related-rooms .swiper-slide__room-description .swiper-slide__room-description__price {
+.swiper--related-rooms .swiper-slide__room-description .swiper-slide__room-description__price,
+.swiper--popular-rooms .swiper-slide__room-description .swiper-slide__room-description__price {
   font-weight: 700;
   font-family: "Archivo", sans-serif;
   color: #BEAD8E;
   font-size: 0.9rem;
   margin-right: 0.5em;
 }
-.swiper--related-rooms .swiper-slide__room-description .swiper-slide__room-description__price > span {
+.swiper--related-rooms .swiper-slide__room-description .swiper-slide__room-description__price > span,
+.swiper--popular-rooms .swiper-slide__room-description .swiper-slide__room-description__price > span {
   font-size: 0.65rem;
 }
-.swiper--related-rooms .swiper-slide__room-description .swiper-slide__room-description__booking {
+.swiper--related-rooms .swiper-slide__room-description .swiper-slide__room-description__booking,
+.swiper--popular-rooms .swiper-slide__room-description .swiper-slide__room-description__booking {
   font-weight: 700;
   font-family: "Archivo", sans-serif;
   color: #BDBDBD;
   font-size: 0.9rem;
 }
-.swiper--related-rooms .swiper-slide__img {
+.swiper--related-rooms .swiper-slide__img,
+.swiper--popular-rooms .swiper-slide__img {
   width: 100%;
-  height: 100%;
+  height: 10em;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .swiper--related-rooms .swiper-button-next,
-.swiper--related-rooms .swiper-button-prev {
-  top: 7em;
+.swiper--related-rooms .swiper-button-prev,
+.swiper--popular-rooms .swiper-button-next,
+.swiper--popular-rooms .swiper-button-prev {
+  top: 5em;
 }
 
 .swiper--menu {
@@ -332,6 +347,9 @@
   }
   .swiper--rooms .swiper-slide-active .swiper-slide__room-description {
     opacity: 1;
+  }
+  .swiper--popular-rooms {
+    display: none;
   }
   .swiper--related-rooms .swiper-slide .swiper-slide__room-description .text {
     margin: 1em 0;

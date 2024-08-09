@@ -1,8 +1,8 @@
 
 let counterSwiper = new Swiper(".swiper--counter", {
   slidesPerView: 1,
-  initialSlide: 1, 
-  loop:true,
+  initialSlide: 1,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
   },
@@ -10,8 +10,8 @@ let counterSwiper = new Swiper(".swiper--counter", {
 
 let foodSwiper = new Swiper(".swiper--food", {
   slidesPerView: 1,
-  initialSlide: 1, 
-  loop:true,
+  initialSlide: 1,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
   },
@@ -19,7 +19,7 @@ let foodSwiper = new Swiper(".swiper--food", {
 
 let menuSwiper = new Swiper(".swiper--menu", {
   slidesPerView: 1,
-  loop:true,
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
@@ -32,14 +32,14 @@ let menuSwiper = new Swiper(".swiper--menu", {
 });
 let facilitiesSwiper = new Swiper(".swiper--facilities", {
   slidesPerView: 1,
-  loop:true, 
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
   },
 });
 let roomsSwiper = new Swiper(".swiper--rooms", {
   slidesPerView: 1,
-  loop:true,
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
@@ -47,13 +47,13 @@ let roomsSwiper = new Swiper(".swiper--rooms", {
   breakpoints: {
     1000: {
       slidesPerView: 3,
-      centeredSlides: true, 
+      centeredSlides: true,
     }
   }
 });
 let relatedRoomsSwiper = new Swiper(".swiper--related-rooms", {
   slidesPerView: 1,
-  loop:true,
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
@@ -61,6 +61,20 @@ let relatedRoomsSwiper = new Swiper(".swiper--related-rooms", {
   breakpoints: {
     1000: {
       slidesPerView: 2
+    }
+  }
+});
+let popularRoomsSwiper = new Swiper(".swiper--popular-rooms", {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    1000: {
+      slidesPerView: 3,
+      centeredSlides: true,
     }
   }
 });
