@@ -79,6 +79,7 @@ main {
   margin: 0.4em 0;
 }
 
+
 .title--white {
   color: #FFFFFF;
 }
@@ -130,6 +131,12 @@ main {
   color: #FFFFFF;
 }
 
+.border-bottom {
+  border-bottom: 1px solid #ECECEC;
+}
+.crossed {
+  text-decoration: line-through;
+}
 .button {
   border: none;
   background-color: $beige-tan;
