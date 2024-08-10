@@ -54,6 +54,52 @@
      object-fit: cover;
 }
 
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  padding: 4em 0;
+}
+.contact__form .button {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.contact__form__input {
+  width: 100%;
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  padding: 1em;
+  justify-content: center;
+  align-items: left;
+  margin-bottom: 1em;
+}
+.contact__form__input > input {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.contact__form__input > input::-moz-placeholder {
+  color: #777777;
+  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+}
+.contact__form__input > input::placeholder {
+  color: #777777;
+  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact__form__input--big {
+  padding-bottom: 6em;
+}
+
 @media only screen and (min-width: 1000px) {
   .contact {
     padding: 0;
