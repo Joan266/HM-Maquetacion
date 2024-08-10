@@ -117,6 +117,18 @@
     margin-bottom: 0;
   }
   .contact__img {
-    height: 30em;
+    height: 25em;
+  }
+  .contact__form {
+    padding: 5em;
+  }
+  .contact__form .button {
+    width: 30%;
+    margin-left: 35%;
+  }
+  .contact__form .desktop-agrupation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1em;
   }
 }/*# sourceMappingURL=contact.css.map */
