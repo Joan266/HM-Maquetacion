@@ -13,7 +13,12 @@
   background-color: white;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s ease;
+}
 
+.menu--dropdown {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .menu__container {
@@ -23,22 +28,32 @@
   gap: 0.5em;
 }
 
-.menu__drop {
+.drop-down {
+  display: flex; 
+  flex-direction: column;
   position: fixed;
   width: 100%;
   top: 4em;
   left: 0;
-  padding: 1em;
+  padding: 0 1em; 
   background-color: white;
-  display: flex;
   justify-content: left;
-  flex-direction: column;
+  z-index: 999;
   gap: 1em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
 
-  >a {
+  > a {
     color: #111111;
     font-weight: 600;
     font-family: $font-archivo;
     font-size: 0.85rem;
+    transition: ease-out 0.2s; 
   }
+}
+
+.drop-down--open {
+  max-height: 500px;
+  padding: 1.5em 1em;
 }
