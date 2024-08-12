@@ -77,10 +77,7 @@ header {
 
   .menu-desktop {
     display: flex;
-    position: absolute;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    position: fixed;
     top: 1em;
     left: 50%;
     width: 80%;
@@ -90,8 +87,19 @@ header {
     background-color: white;
     z-index: 1000;
     transform: translateX(-50%);
+    transition: top 0.3s ease;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 2px solid #333333;
   }
-  .menu-desktop__logo{
+
+  .menu-hidden {
+    top: -102px;
+  }
+
+  .menu-desktop__logo {
     flex: 1;
     height: 100%;
     display: flex;
@@ -99,7 +107,8 @@ header {
     align-items: center;
     justify-content: left;
   }
-  .menu-desktop__links{
+
+  .menu-desktop__links {
     flex: 3;
     height: 100%;
     display: flex;
@@ -112,7 +121,8 @@ header {
     font-weight: 600;
     color: #111111;
   }
-  .menu-desktop__tools{
+
+  .menu-desktop__tools {
     flex: 1;
     height: 100%;
     display: flex;
