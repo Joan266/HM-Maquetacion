@@ -176,7 +176,7 @@
 .intro {
   background-color: transparent;
   padding: 0 5%;
-  padding-top: 3.5em;
+  padding-top: 8em;
   position: relative;
 
   h1,
@@ -293,7 +293,7 @@
 
   .intro::after {
     top: 43%;
-    height: 75%;
+    height: 73%;
     transform: translateY(-50%);
   }
 
@@ -388,8 +388,8 @@
   .stats__content {
     flex-direction: row;
     padding: 5em 7em;
-    gap:1em;
-    margin-bottom:0;
+    gap: 1em;
+    margin-bottom: 0;
     margin-top: 7em;
   }
 

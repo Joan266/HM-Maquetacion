@@ -1,5 +1,5 @@
-document.getElementById('menu').addEventListener('click', function() {
-  var menu = document.getElementById('menu');
+document.getElementById('menu-mobile').addEventListener('click', function() {
+  var menu = document.getElementById('menu-mobile');
   var menuIcon = document.getElementById('menu-icon');
   var dropDown = document.getElementById('drop-down');
   
