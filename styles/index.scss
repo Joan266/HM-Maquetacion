@@ -127,6 +127,7 @@ main {
 .text--small {
   font-size: 0.65rem;
 }
+
 .text--white {
   color: #FFFFFF;
 }
@@ -134,9 +135,11 @@ main {
 .border-bottom {
   border-bottom: 1px solid #ECECEC;
 }
+
 .crossed {
   text-decoration: line-through;
 }
+
 .button {
   border: none;
   background-color: $beige-tan;
@@ -181,6 +184,13 @@ main {
   width: 2em;
   margin-right: 0.25em;
   font-family: $font-archivo;
+}
+.icon--logo-big {
+  box-shadow: 0px 14px 24px 0px #8B8B8B40;
+  margin-right: 0.5em;
+  font-family: $font-archivo;
+  font-weight: 700;
+  font-size: 1.7rem;
 }
 
 .logo--footer {

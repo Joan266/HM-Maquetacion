@@ -159,7 +159,7 @@
 .intro {
   background-color: transparent;
   padding: 0 5%;
-  padding-top: 3.5em;
+  padding-top: 8em;
   position: relative;
 }
 .intro h1,
@@ -264,7 +264,7 @@
   }
   .intro::after {
     top: 43%;
-    height: 75%;
+    height: 73%;
     transform: translateY(-50%);
   }
   .about-us {
