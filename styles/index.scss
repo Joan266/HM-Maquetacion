@@ -194,27 +194,26 @@ main {
 }
 
 .logo--footer {
-  margin-bottom: 2em;
-
+  margin-bottom: 1em;
   .icon--logo {
     background-color: $beige-tan;
-    height: 2.35em;
-    width: 2.35em;
-    margin-right: 0.8em;
+    height: 2em;
+    width: 2em;
+    margin-right: 0.5em;
     font-weight: 700;
     color: white;
     font-size: 1.4rem;
   }
 
   img {
-    height: 1.9em;
+    height: 1.7em;
     width: auto;
   }
 }
 
 .page-intro {
   position: relative;
-  padding: 4em 0;
+  padding: 9em 0 6em 0;
   margin-bottom: 2em;
   background-color: transparent;
 
@@ -300,9 +299,9 @@ main {
   .page-intro {
     max-width: 950px;
     margin: 0 auto;
-    margin-bottom: 3em;
-    padding-top: 5em;
-    padding-bottom: 2em;
+    margin-bottom: 6em;
+    padding-top: 12em;
+    padding-bottom: 6em;
   }
 
   .img-frame {
