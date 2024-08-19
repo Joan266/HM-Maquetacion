@@ -413,9 +413,17 @@
     gap: 1.5em;
 
     .swiper-slide {
+      cursor: pointer;
+      padding-bottom: 1em;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
       .swiper-slide__title {
         font-size: 1.5rem;
       }
+    }
+    .swiper-slide:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      background-color: whitesmoke;
     }
   }
 
@@ -495,10 +503,10 @@
   .non-swiper--counter {
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 1.5em;
     width: 100%;
     justify-content: center;
-    height: 16em;
+    height: 15em;
 
     .non-swiper__item {
       position: relative;

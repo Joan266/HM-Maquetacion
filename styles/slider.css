@@ -369,8 +369,18 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 1.5em;
   }
+  .non-swiper--facilities .swiper-slide {
+    cursor: pointer;
+    padding-bottom: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
   .non-swiper--facilities .swiper-slide .swiper-slide__title {
     font-size: 1.5rem;
+  }
+  .non-swiper--facilities .swiper-slide:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: whitesmoke;
   }
   .swiper--facilities {
     display: none;
@@ -433,10 +443,10 @@
   .non-swiper--counter {
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 1.5em;
     width: 100%;
     justify-content: center;
-    height: 16em;
+    height: 15em;
   }
   .non-swiper--food .non-swiper__item,
   .non-swiper--counter .non-swiper__item {

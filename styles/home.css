@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.5em;
-  padding: 2em 0;
+  padding: 3.5em 0;
 }
 
 .stats__item {
@@ -12,13 +12,18 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap: 0.5em;
+}
+.stats__item > img {
+  max-width: 75px;
+  max-height: 75px;
 }
 
 .stats__item__title {
   color: #FFFFFF;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-top: 0.5em;
 }
 
@@ -312,7 +317,9 @@
     padding: 0;
   }
   .intro-video {
-    padding: 3.5em 5%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-left: right;
     display: flex;
     flex-direction: row;
     gap: 2em;
@@ -342,13 +349,18 @@
   }
   .stats__content {
     flex-direction: row;
-    padding: 5em 7em;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
     gap: 1em;
     margin-bottom: 0;
     margin-top: 7em;
   }
   .food-menu {
-    padding: 0 5%;
+    padding: 0;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 12em;
   }
   .food-menu__donut--1 {
@@ -357,26 +369,8 @@
   .food-menu__donut--2 {
     display: block;
     position: absolute;
-    top: 0;
-    left: 1%;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .intro {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-  .about-us {
-    padding: 2.5em 20%;
-  }
-  .intro-video {
-    padding: 2.5em 20%;
-  }
-  .food-menu {
-    padding: 0 20%;
-    padding-top: 12em;
-  }
-  .food-menu__donut--2 {
-    left: 5%;
+    top: 5%;
+    left: -5%;
+    transform: translateX(-100%);
   }
 }/*# sourceMappingURL=home.css.map */
