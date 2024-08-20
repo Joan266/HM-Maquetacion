@@ -172,6 +172,9 @@
       color: $beige-tan;
       font-size: 0.8rem;
       margin-right: 0.5em;
+      >span {
+        font-size: 0.65rem;
+      }
     }
 
     .swiper-slide__room-description__booking {
@@ -204,7 +207,6 @@
   padding-top: 2em;
   padding-bottom: 10em;
 }
-
 .swiper--related-rooms,
 .swiper--popular-rooms {
   .swiper-slide {
@@ -234,7 +236,6 @@
       color: $beige-tan;
       font-size: 0.9rem;
       margin-right: 0.5em;
-
       >span {
         font-size: 0.65rem;
       }
@@ -375,6 +376,11 @@
 
       .swiper-slide__room-description {
         opacity: 1;
+
+        .swiper-slide__room-description__price {
+          font-size: 0.9rem;
+        
+        }
       }
     }
   }
@@ -416,10 +422,12 @@
       cursor: pointer;
       padding-bottom: 1em;
       transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
       .swiper-slide__title {
         font-size: 1.5rem;
       }
     }
+
     .swiper-slide:hover {
       transform: scale(1.05);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -539,9 +547,9 @@
         text-align: left;
 
         .swiper-slide__room-description__price {
-          margin-left: 0.75em;
+          margin-left: 2em;
+          margin-top: 2em;
           width: 45%;
-          margin-top: 0.7em;
         }
       }
     }
