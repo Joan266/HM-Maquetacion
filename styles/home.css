@@ -56,9 +56,9 @@
 
 .intro-video {
   display: block;
-  padding: 2.5em 5%;
+  padding: 5em 0;
   position: relative;
-  background-color: #222222;
+  background-color: transparent;
 }
 .intro-video .intro-video__video {
   margin: 1em 0;
@@ -316,10 +316,10 @@
   .rooms {
     padding: 0;
   }
-  .intro-video {
+  .intro-video > div {
     max-width: 950px;
     margin-left: auto;
-    margin-left: right;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     gap: 2em;
@@ -327,15 +327,16 @@
     position: relative;
   }
   .intro-video .text {
-    max-width: 31em;
+    max-width: 28em;
   }
   .intro-video .intro-video__video--mobile {
     display: none;
   }
   .intro-video .intro-video__video--desktop {
     display: block;
-    height: 20em;
-    width: 43em;
+    margin: 0;
+    height: 21em;
+    width: 42em;
   }
   .intro-video::after {
     content: "";
@@ -345,6 +346,17 @@
     width: 30%;
     height: 100%;
     background-color: #BEAD8E;
+    z-index: -2;
+  }
+  .intro-video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    transform: translateX(0%);
+    background-color: #222222;
     z-index: -1;
   }
   .stats__content {
