@@ -86,56 +86,60 @@
   </header>
   <main>
     <section class="intro">
-      <h1 class="subtitle">THE ULTIMATE LUXURY EXPIRIENCE</h1>
-      <h2 class="title">The Perfect Base For You</h2>
-      <button class="button">TAKE A TOUR</button>
-      <button class="button button--black">LEARN MORE</button>
-      <form>
-        <div>
-          <label for="arrival-date">Arrival Date</label>
-          <div class="date-input-container">
-            <input id="arrival-date" type="date"></input>
+      <div class="container">
+        <h1 class="subtitle">THE ULTIMATE LUXURY EXPIRIENCE</h1>
+        <h2 class="title">The Perfect Base For You</h2>
+        <button class="button">TAKE A TOUR</button>
+        <button class="button button--black">LEARN MORE</button>
+        <form>
+          <div>
+            <label for="arrival-date">Arrival Date</label>
+            <div class="date-input-container">
+              <input id="arrival-date" type="date"></input>
+            </div>
           </div>
-        </div>
-        <div>
-          <label for="ledeparture-date">LeDeparture Date</label>
-          <div class="date-input-container">
-            <input id="ledeparture-date" type="date" placeholder=""></input>
+          <div>
+            <label for="ledeparture-date">LeDeparture Date</label>
+            <div class="date-input-container">
+              <input id="ledeparture-date" type="date" placeholder=""></input>
+            </div>
           </div>
-        </div>
-        <button class="button">CHECK AVAILABILITY</button>
-      </form>
+          <button class="button">CHECK AVAILABILITY</button>
+        </form>
+      </div>
     </section>
     <section class="about-us">
-      <div class="about-us__header">
-        <h3 class="subtitle">ABOUT US</h3>
-        <h4 class="title">Discover Our Underground.</h4>
-        <p class="text about-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button class="button">BOOK NOW</button>
-      </div>
-      <div class="cards-container">
-        <div class="about-us__card about-us__card--white">
-          <div class="about-us__card__img"><img src="./public/img/hotel-crew.webp" alt="hotel crew"></img></div>
-          <div class="about-us__card__description">
-            <div class="about-us__card__description__background-icon"><img src="./public/icon/people_icon 3.svg"
-                alt="people icon"></img></div>
-            <div class="about-us__card__description__icon"><img src="./public/icon/people_icon 2.svg"
-                alt="people icon"></img></div>
-            <h5 class="about-us__card__description__title">Strong Team</h5>
-            <p class="about-us__card__description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-              do eiusmod tempor.</p>
-          </div>
+      <div class="container">
+        <div class="about-us__header">
+          <h3 class="subtitle">ABOUT US</h3>
+          <h4 class="title">Discover Our Underground.</h4>
+          <p class="text about-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <button class="button">BOOK NOW</button>
         </div>
-        <div class="about-us__card about-us__card--black">
-          <div class="about-us__card__img"><img src="./public/img/lux-room.webp" alt="luxury room"></img></div>
-          <div class="about-us__card__description">
-            <div class="about-us__card__description__icon"><img src="./public/icon/calendar_icon 1.svg"
-                alt="calendar icon"></img></div>
-            <h5 class="about-us__card__description__title">Luxury Room</h5>
-            <p class="about-us__card__description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-              do eiusmod tempor.</p>
+        <div class="cards-container">
+          <div class="about-us__card about-us__card--white">
+            <div class="about-us__card__img"><img src="./public/img/hotel-crew.webp" alt="hotel crew"></img></div>
+            <div class="about-us__card__description">
+              <div class="about-us__card__description__background-icon"><img src="./public/icon/people_icon 3.svg"
+                  alt="people icon"></img></div>
+              <div class="about-us__card__description__icon"><img src="./public/icon/people_icon 2.svg"
+                  alt="people icon"></img></div>
+              <h5 class="about-us__card__description__title">Strong Team</h5>
+              <p class="about-us__card__description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor.</p>
+            </div>
+          </div>
+          <div class="about-us__card about-us__card--black">
+            <div class="about-us__card__img"><img src="./public/img/lux-room.webp" alt="luxury room"></img></div>
+            <div class="about-us__card__description">
+              <div class="about-us__card__description__icon"><img src="./public/icon/calendar_icon 1.svg"
+                  alt="calendar icon"></img></div>
+              <h5 class="about-us__card__description__title">Luxury Room</h5>
+              <p class="about-us__card__description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -151,8 +155,9 @@
             <img class="swiper-slide__img" src="./public/img/room 1.webp" alt="room 1"></img>
             <div class="swiper-slide__room-description">
               <div>
-                <h5 class="swiper-slide__room-description__title">Minimal Duplex Room</h5>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                <h5 class="title title--smaller">Minimal Duplex Room</h5>
+                <p class="text text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor
                   incididunt ut labore et dolore.</p>
               </div>
               <span class="swiper-slide__room-description__price">$345<span>/Night</span></span>
@@ -165,7 +170,8 @@
             <div class="swiper-slide__room-description">
               <div>
                 <h5 class="title title--smaller">Minimal Duplex Room</h5>
-                <p class="text text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                <p class="text text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor
                   incididunt ut labore et dolore.</p>
               </div>
               <span class="swiper-slide__room-description__price">$345<span>/Night</span></span>
@@ -177,8 +183,9 @@
             <img class="swiper-slide__img" src="./public/img/room 3.webp" alt="room 3"></img>
             <div class="swiper-slide__room-description">
               <div>
-                <h5 class="swiper-slide__room-description__title">Minimal Duplex Room</h5>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                <h5 class="title title--smaller">Minimal Duplex Room</h5>
+                <p class="text text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor
                   incididunt ut labore et dolore.</p>
               </div>
               <span class="swiper-slide__room-description__price">$345<span>/Night</span></span>
@@ -190,8 +197,9 @@
             <img class="swiper-slide__img" src="./public/img/room 4.webp" alt="room 4"></img>
             <div class="swiper-slide__room-description">
               <div>
-                <h5 class="swiper-slide__room-description__title">Minimal Duplex Room</h5>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                <h5 class="title title--smaller">Minimal Duplex Room</h5>
+                <p class="text text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor
                   incididunt ut labore et dolore.</p>
               </div>
               <span class="swiper-slide__room-description__price">$345<span>/Night</span></span>
@@ -203,7 +211,7 @@
       </div>
     </section>
     <section class="intro-video">
-      <div>
+      <div class="container">
         <div>
           <h3 class="subtitle">INTRO VIDEO</h3>
           <h4 class="title">Meet With Our Luxury Place.</h4>
@@ -216,7 +224,7 @@
         <iframe class="intro-video__video intro-video__video--desktop"></iframe>
       </div>
     </section>
-    <section class="facilities">
+    <section class="facilities container">
       <div class="swiper swiper--facilities">
         <h3 class="subtitle">FACILITIES</h3>
         <h4 class="title">Core Features</h4>
@@ -311,7 +319,7 @@
         </div>
       </div>
     </section>
-    <section class="food-menu">
+    <section class="food-menu container">
       <div class="food-menu__donut food-menu__donut--1"> <img src="./public/icon/donut_icon 1.svg"
           alt="donut img"></img></div>
       <div class="food-menu__donut food-menu__donut--2"> <img src="./public/icon/donut_icon 2.svg"
@@ -491,7 +499,7 @@
         </div>
       </div>
     </section>
-    <section class="stats__content">
+    <section class="stats__content container">
       <div class="stats__item">
         <img src="./public/icon/cohete_icon 1.svg" alt="cohete icon"></img>
         <div class="stats__item__title">84k</div>

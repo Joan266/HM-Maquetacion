@@ -34,8 +34,8 @@
 }
 
 .food-menu {
-  padding: 0 5%;
-  padding-top: 6em;
+  padding: 0 1em;
+  padding-top: 2em;
   position: relative;
 }
 
@@ -55,13 +55,17 @@
 }
 
 .intro-video {
-  display: block;
-  padding: 5em 0;
   position: relative;
-  background-color: transparent;
+  background-color: #222222;
+}
+.intro-video > div {
+  display: block;
+  padding: 5em 1em;
 }
 .intro-video .intro-video__video {
   margin: 1em 0;
+  height: 13em;
+  width: 100%;
 }
 .intro-video .title {
   color: #FFFFFF;
@@ -82,8 +86,10 @@
 }
 
 .about-us {
-  padding: 2.5em 5%;
   position: relative;
+}
+.about-us > div {
+  padding: 2em 1em;
 }
 .about-us .about-us__text {
   max-width: none;
@@ -108,7 +114,7 @@
   padding: 0 1.5em;
 }
 .about-us__card .about-us__card__img {
-  height: 15em;
+  height: 14em;
   width: 100%;
 }
 .about-us__card .about-us__card__img img {
@@ -162,10 +168,10 @@
 }
 
 .intro {
-  background-color: transparent;
-  padding: 0 5%;
-  padding-top: 8em;
   position: relative;
+}
+.intro > div {
+  padding-top: 8em;
 }
 .intro h1,
 .intro h2,
@@ -175,11 +181,14 @@
 .intro h1 {
   max-width: 60%;
   line-height: 1.4;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
+}
+.intro .button {
+  min-width: 14em;
 }
 .intro form {
   margin-top: 3em;
-  padding: 1em 0;
+  padding: 2em 0;
   display: block;
 }
 .intro form label {
@@ -210,9 +219,9 @@
   color: #686868;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 0.8rem;
-  height: 3em;
-  padding-left: 1.5em;
+  font-size: 0.7rem;
+  height: 2.7em;
+  padding-left: 0.5em;
 }
 
 .intro::after {
@@ -221,7 +230,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 58%;
+  height: 29em;
   z-index: -1;
   background-color: #333333;
 }
@@ -238,9 +247,8 @@
 }
 
 @media only screen and (min-width: 1000px) {
-  .intro {
-    position: relative;
-    padding-top: 10em;
+  .intro > div {
+    padding-top: 12em;
   }
   .intro .button--black {
     margin-left: 1em;
@@ -255,8 +263,12 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
-    gap: 1em;
-    margin-top: 8em;
+    gap: 2em;
+    margin-top: 3em;
+    padding: 1em 0;
+  }
+  .intro form label {
+    font-size: 0.7rem;
   }
   .intro form input {
     min-width: 20em;
@@ -268,11 +280,16 @@
     height: fit-content;
   }
   .intro::after {
-    top: 43%;
-    height: 73%;
+    top: 17.5em;
+    height: 26em;
     transform: translateY(-50%);
   }
   .about-us {
+    width: 100%;
+    position: relative;
+  }
+  .about-us > div {
+    padding: 0;
     display: flex;
     flex-direction: row-reverse;
     gap: 2.5em;
@@ -302,7 +319,7 @@
     margin: 0;
   }
   .about-us__card__img {
-    height: 12em;
+    height: 10em;
   }
   .about-us__card--white {
     margin-bottom: 1em;
@@ -317,9 +334,7 @@
     padding: 0;
   }
   .intro-video > div {
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 5em 0;
     display: flex;
     flex-direction: row;
     gap: 2em;
@@ -361,19 +376,11 @@
   }
   .stats__content {
     flex-direction: row;
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
     gap: 1em;
-    margin-bottom: 0;
-    margin-top: 7em;
   }
   .food-menu {
     padding: 0;
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 12em;
+    padding-top: 5em;
   }
   .food-menu__donut--1 {
     display: none;
@@ -381,7 +388,7 @@
   .food-menu__donut--2 {
     display: block;
     position: absolute;
-    top: 5%;
+    top: -5em;
     left: -5%;
     transform: translateX(-100%);
   }

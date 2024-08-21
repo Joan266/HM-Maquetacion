@@ -170,7 +170,7 @@
       font-weight: 700;
       font-family: $font-archivo;
       color: $beige-tan;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       margin-right: 0.5em;
       >span {
         font-size: 0.65rem;
@@ -324,14 +324,15 @@
     color: #222222;
     max-width: 14em;
     margin-top: 0.7em;
+    font-size: 0.65em;
   }
 
   .swiper-button-next {
-    top: 97%;
+    top: 98%;
   }
 
   .swiper-button-prev {
-    top: 97%;
+    top: 98%;
     left: auto;
     right: 3em;
   }
@@ -365,6 +366,7 @@
         transition: all 100ms ease;
         opacity: 0;
       }
+    
     }
 
     .swiper-slide-active {
@@ -450,6 +452,7 @@
     .text {
       max-width: 25em;
       padding-right: 0.5em;
+      font-size: 0.7rem;
     }
 
     .swiper-slide__info {

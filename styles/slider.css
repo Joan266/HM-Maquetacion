@@ -164,7 +164,7 @@
   font-weight: 700;
   font-family: "Archivo", sans-serif;
   color: #BEAD8E;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-right: 0.5em;
 }
 .swiper--rooms .swiper-slide__room-description .swiper-slide__room-description__price > span {
@@ -310,12 +310,13 @@
   color: #222222;
   max-width: 14em;
   margin-top: 0.7em;
+  font-size: 0.65em;
 }
 .swiper--menu .swiper-button-next {
-  top: 97%;
+  top: 98%;
 }
 .swiper--menu .swiper-button-prev {
-  top: 97%;
+  top: 98%;
   left: auto;
   right: 3em;
 }
@@ -401,6 +402,7 @@
   .swiper--menu .text {
     max-width: 25em;
     padding-right: 0.5em;
+    font-size: 0.7rem;
   }
   .swiper--menu .swiper-slide__info {
     cursor: pointer;

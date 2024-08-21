@@ -78,12 +78,12 @@ header {
   .menu-desktop {
     display: flex;
     position: fixed;
-    top: 1em;
+    top: 1.5em;
     left: 50%;
     width: 80%;
     min-width: 950px;
-    padding: 0.75em;
-    min-height: 4em;
+    padding: 1em 2em;
+    min-height: 6em;
     background-color: white;
     z-index: 1000;
     transform: translateX(-50%);
@@ -96,7 +96,7 @@ header {
   }
 
   .menu-hidden {
-    top: -102px;
+    top: -153px;
   }
 
   .menu-desktop__logo {
