@@ -46,16 +46,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.about-us__title {
-  color: #222222;
-  font-family: "Old Standard TT", serif;
-  font-size: 1.9rem;
-  font-weight: 400;
-  margin: 0.4em 0;
-}
-
 .counter {
-  padding: 0 1em;
   text-align: left;
 }
 
@@ -91,9 +82,8 @@
 
 @media only screen and (min-width: 1000px) {
   .about-us {
-    padding: 0 1em;
+    padding: 0;
     max-width: 950px;
-    margin: 0 auto;
     margin-bottom: 5em;
   }
   .about-us__restaurant {
@@ -105,11 +95,8 @@
   }
   .about-us__restaurant .img-frame {
     margin: 0;
-  }
-  .about-us__title {
-    margin-top: 0.6em;
-    margin-bottom: 0.8em;
-    font-size: 1.6rem;
+    height: 18em;
+    min-width: 22em;
   }
   .about-us__restaurant__info {
     padding: 1em 0;
@@ -122,11 +109,6 @@
   }
   .facilities-grid__cell--exception {
     display: flex;
-  }
-  .counter {
-    padding: 4em 0;
-    max-width: 950px;
-    margin: auto;
   }
   .facts {
     flex-direction: row;

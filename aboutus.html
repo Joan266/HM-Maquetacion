@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/common.css">
   <link rel="stylesheet" href="styles/about-us.css">
   <link rel="stylesheet" href="styles/slider.css">
   <link rel="stylesheet" href="styles/footer.css">
@@ -20,7 +20,7 @@
         <div class="icon">
           <img id="menu-icon" src="./public/icon/hamburguer 1.svg" alt="hamburguer menu"></img>
         </div>
-        <a href="index.html">
+        <a href="home.html">
           <article class="logo">
             <div class="icon icon--logo">H</div>
             <img src="./public/icon/Hotel Miranda.svg" alt="hotel miranda text"></img>
@@ -38,7 +38,7 @@
     </div>
     <div id="menu-desktop" class="menu-desktop">
       <div class="menu-desktop__logo">
-        <a href="index.html">
+        <a href="home.html">
           <article class="logo">
             <div class="icon icon--logo-big">H</div>
             <img src="./public/icon/Hotel Miranda desktop.svg" alt="hotel miranda text"></img>
@@ -85,11 +85,13 @@
   </header>
   <main>
     <div class="page-intro">
-      <h1 class="subtitle">THE ULTIMATE LUXURY</h1>
-      <h2 class="title">About Us</h2>
-      <div class="page-intro__path-info">Home | <span>About</span></div>
+      <div class="container">
+        <h1 class="subtitle subtitle--white">THE ULTIMATE LUXURY</h1>
+        <h2 class="title title--white">About Us</h2>
+        <div class="page-intro__path-info">Home | <span>About</span></div>
+      </div>
     </div>
-    <section class="about-us">
+    <section class="about-us container">
       <div class="img-frame">
         <video src=""></video>
       </div>
@@ -122,8 +124,8 @@
         <div class="img-frame"><img></div>
         <div class="about-us__restaurant__info">
           <h3 class="subtitle">RESTAURANT</h3>
-          <h4 class="about-us__title">Get Restaurant Facilities & Many Other More</h4>
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          <h4 class="title title--medium">Get Restaurant Facilities & Many Other More</h4>
+          <p class="text text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
             labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
             ut labore et dolore.</p>
           <button class="button">TAKE A TOUR</button>
@@ -237,7 +239,7 @@
         </div>
       </div>
     </section>
-    <section class="counter">
+    <section class="counter container">
       <h3 class="subtitle">COUNTER</h3>
       <h4 class="title">Some Fun Facts</h4>
       <div class="facts">
@@ -287,7 +289,7 @@
   <footer class="footer">
     <div class="footer__info">
       <section class="footer__info__about">
-        <a href="index.html">
+        <a href="home.html">
           <article class="logo logo--footer">
             <div class="icon icon--logo">H</div>
             <img src="./public/icon/Hotel Miranda.svg" alt="hotel miranda text"></img>
@@ -304,7 +306,7 @@
         </article>
       </section>
       <section class="footer__info__services">
-        <div class="footer__subtitle">Services.</div>
+        <div class="footer__subtitle">Services</div>
         <ul>
           <li>Gaming Zone</li>
           <li>Marriage Party</li>
@@ -319,32 +321,32 @@
         </ul>
       </section>
       <section class="footer__info__contact">
-        <div class="footer__subtitle">Contact Us.</div>
-        <div class="footer__contact-num">
-          <div class="icon">
+        <div class="footer__subtitle">Contact Us</div>
+        <div class="footer__contact-link">
+          <div class="footer__contact-link__icon">
             <img src="./public/icon/phone_icon 1.svg" alt="phone icon"></img>
           </div>
           <div>
-            <div class="footer__contact-num__title">Phone Number</div>
-            <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
+            <div class="footer__contact-link__title">Phone Number</div>
+            <span class="footer__contact-link__subtitle">+34 645 844 709</span>
           </div>
         </div>
-        <div class="footer__contact-num">
-          <div class="icon">
+        <div class="footer__contact-link">
+          <div class="footer__contact-link__icon">
             <img src="./public/icon/email_icon 1.svg" alt="email icon"></img>
           </div>
           <div>
-            <div class="footer__contact-num__title">Phone Number</div>
-            <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
+            <div class="footer__contact-link__title">Email</div>
+            <span class="footer__contact-link__subtitle">joanalemany26@gmail.com</span>
           </div>
         </div>
-        <div class="footer__contact-num">
-          <div class="icon">
+        <div class="footer__contact-link">
+          <div class="footer__contact-link__icon">
             <img src="./public/icon/location_icon 1.svg" alt="location icon"></img>
           </div>
           <div>
-            <div class="footer__contact-num__title">Phone Number</div>
-            <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
+            <div class="footer__contact-link__title">Location</div>
+            <span class="footer__contact-link__subtitle">Madrid</span>
           </div>
         </div>
       </section>
