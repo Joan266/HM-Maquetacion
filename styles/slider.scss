@@ -172,6 +172,7 @@
       color: $beige-tan;
       font-size: 0.9rem;
       margin-right: 0.5em;
+
       >span {
         font-size: 0.65rem;
       }
@@ -207,6 +208,7 @@
   padding-top: 2em;
   padding-bottom: 10em;
 }
+
 .swiper--related-rooms,
 .swiper--popular-rooms {
   .swiper-slide {
@@ -236,6 +238,7 @@
       color: $beige-tan;
       font-size: 0.9rem;
       margin-right: 0.5em;
+
       >span {
         font-size: 0.65rem;
       }
@@ -346,6 +349,7 @@
 
 @media only screen and (min-width: 1000px) {
   .swiper--rooms {
+    padding-bottom: 15em;
     .swiper-button-next {
       top: 10em;
     }
@@ -366,7 +370,7 @@
         transition: all 100ms ease;
         opacity: 0;
       }
-    
+
     }
 
     .swiper-slide-active {
@@ -378,10 +382,11 @@
 
       .swiper-slide__room-description {
         opacity: 1;
+        padding: 0.5em 1.25em;
 
         .swiper-slide__room-description__price {
-          font-size: 0.9rem;
-        
+          font-size: 1.5rem;
+
         }
       }
     }
@@ -414,6 +419,7 @@
   }
 
   .non-swiper--facilities {
+    margin-top: 4em;
     max-width: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -434,6 +440,12 @@
       transform: scale(1.05);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
       background-color: whitesmoke;
+    }
+
+    .swiper-slide--black:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      background-color: #292929;
     }
   }
 

@@ -112,5 +112,6 @@
   }
   .facts {
     flex-direction: row;
+    margin-bottom: 2em;
   }
 }/*# sourceMappingURL=about-us.css.map */

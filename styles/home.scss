@@ -324,53 +324,56 @@
   .about-us {
     width: 100%;
     position: relative;
-
     >div {
       padding: 0;
       display: flex;
       flex-direction: row-reverse;
       gap: 2.5em;
+      transform: translateX(-5%);
     }
 
     .about-us__header {
       margin-top: 6.5em;
       width: 50%;
+      .text {
+        max-width: 30em;
+      }
     }
 
     .cards-container {
       display: flex;
       flex-direction: row;
       width: 50%;
-      gap: 1em;
+      gap: 1.5em;
     }
   }
 
   .about-us:after {
     content: "";
     position: absolute;
-    top: 28%;
-    width: 55%;
+    top: 27%;
+    width: 65%;
     z-index: -1;
     height: 75%;
     background-color: #F9F9F9;
   }
 
   .about-us__card {
-    gap: 1em;
+    gap: 1.5em;
     padding: 0;
     margin: 0;
   }
 
   .about-us__card__img {
-    height: 10em;
+    height: 12em;
   }
 
   .about-us__card--white {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   .about-us__card--black {
-    margin-top: 1em;
+    margin-top: 2em;
   }
 
   .about-us__card--white {

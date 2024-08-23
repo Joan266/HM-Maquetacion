@@ -325,6 +325,9 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .swiper--rooms {
+    padding-bottom: 15em;
+  }
   .swiper--rooms .swiper-button-next {
     top: 10em;
   }
@@ -350,9 +353,10 @@
   }
   .swiper--rooms .swiper-slide-active .swiper-slide__room-description {
     opacity: 1;
+    padding: 0.5em 1.25em;
   }
   .swiper--rooms .swiper-slide-active .swiper-slide__room-description .swiper-slide__room-description__price {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
   .swiper--popular-rooms {
     display: none;
@@ -370,6 +374,7 @@
     font-size: 0.85rem;
   }
   .non-swiper--facilities {
+    margin-top: 4em;
     max-width: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -388,6 +393,11 @@
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     background-color: whitesmoke;
+  }
+  .non-swiper--facilities .swiper-slide--black:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: #292929;
   }
   .swiper--facilities {
     display: none;

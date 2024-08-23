@@ -48,16 +48,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .facilities {
+  position: relative;
   text-align: center;
 }
 
 .facilities--black {
+  >div {
+    padding: 4em 1em;
+  }
+
   &::after {
     content: "";
     position: absolute;
     top: 0;
     left: 50%;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: #222222;
     z-index: -1;
@@ -211,6 +216,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .page-intro {
   position: relative;
+
   >div {
     padding-bottom: 3em;
     padding-top: 12em;
@@ -280,49 +286,63 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 6em;
   }
 
-  .button {
-    margin-top: 1.5em;
+  .facilities--black {
+    >div {
+      padding: 4em 0;
+    }
   }
 
-  .title {
-    font-size: 3rem;
+    .button {
+      margin-top: 1.5em;
+    }
+
+    .title {
+      font-size: 3rem;
+    }
+
+    .title--smaller {
+      font-size: 1.1rem;
+    }
+
+    .title--small {
+      font-size: 1.65rem;
+    }
+
+    .title--medium {
+      font-size: 1.9rem;
+    }
+
+    .subtitle {
+      font-size: 0.6rem;
+    }
+
+    .page-intro {
+      margin-bottom: 6em;
+    }
+
+    .img-frame {
+      height: 22em;
+    }
+
+    .big-p {
+      min-width: 20em;
+      padding: 0 1.5em;
+      font-size: 2.3rem;
+    }
+
+    .text {
+      font-size: 0.7rem;
+    }
+
+    .text--small {
+      font-size: 0.6rem;
+    }
   }
 
-  .title--smaller {
-    font-size: 1.1rem;
-  }
 
-  .title--small {
-    font-size: 1.65rem;
+  @media only screen and (min-width: 1550px) {
+    .container {
+      max-width: 1150px;
+      margin-bottom: 8em;
+    }
   }
-
-  .title--medium {
-    font-size: 1.9rem;
-  }
-
-  .subtitle {
-    font-size: 0.6rem;
-  }
-
-  .page-intro {
-    margin-bottom: 6em;
-  }
-
-  .img-frame {
-    height: 22em;
-  }
-
-  .big-p {
-    min-width: 20em;
-    padding: 0 1.5em;
-    font-size: 2.3rem;
-  }
-
-  .text {
-    font-size: 0.7rem;
-  }
-
-  .text--small {
-    font-size: 0.6rem;
-  }
-}
