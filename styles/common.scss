@@ -218,9 +218,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: relative;
 
   >div {
-    padding-bottom: 3em;
-    padding-top: 12em;
-    height: 22em;
+    margin-bottom: 3em;
+    padding-bottom: 1em;
+    padding-top: 8em;
+    height: 18em;
   }
 
   &::after {
@@ -229,7 +230,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     top: 0;
     left: 50%;
     width: 100%;
-    height: 5em;
+    height: 4em;
     background-color: #222222;
     z-index: -1;
     transform: translateX(-50%);
@@ -243,7 +244,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     top: 0;
     z-index: -2;
     background-color: #333333;
-    height: 22em;
+    height: 18em;
   }
 }
 
@@ -252,7 +253,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #333333;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 1em;
   font-family: $font-roboto;
   font-size: 0.7rem;
   font-weight: 600;
@@ -292,57 +293,73 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
   }
 
-    .button {
-      margin-top: 1.5em;
-    }
+  .button {
+    margin-top: 1.5em;
+  }
 
-    .title {
-      font-size: 3rem;
-    }
+  .title {
+    font-size: 3rem;
+  }
 
-    .title--smaller {
-      font-size: 1.1rem;
-    }
+  .title--smaller {
+    font-size: 1.1rem;
+  }
 
-    .title--small {
-      font-size: 1.65rem;
-    }
+  .title--small {
+    font-size: 1.65rem;
+  }
 
-    .title--medium {
-      font-size: 1.9rem;
-    }
+  .title--medium {
+    font-size: 1.9rem;
+  }
 
-    .subtitle {
-      font-size: 0.6rem;
-    }
+  .subtitle {
+    font-size: 0.6rem;
+  }
 
-    .page-intro {
-      margin-bottom: 6em;
-    }
-
-    .img-frame {
+  .page-intro {
+    >div {
+      padding-bottom: 3em;
+      padding-top: 12em;
       height: 22em;
     }
 
-    .big-p {
-      min-width: 20em;
-      padding: 0 1.5em;
-      font-size: 2.3rem;
+    &::after {
+      height: 5em;
     }
 
-    .text {
-      font-size: 0.7rem;
-    }
-
-    .text--small {
-      font-size: 0.6rem;
+    &::before {
+      height: 22em;
     }
   }
 
-
-  @media only screen and (min-width: 1550px) {
-    .container {
-      max-width: 1150px;
-      margin-bottom: 8em;
-    }
+  .page-intro__path-info {
+    right: 0;
   }
+
+  .img-frame {
+    height: 22em;
+  }
+
+  .big-p {
+    min-width: 20em;
+    padding: 0 1.5em;
+    font-size: 2.3rem;
+  }
+
+  .text {
+    font-size: 0.7rem;
+  }
+
+  .text--small {
+    font-size: 0.6rem;
+  }
+}
+
+
+@media only screen and (min-width: 1550px) {
+  .container {
+    max-width: 1150px;
+    margin-bottom: 8em;
+  }
+}
