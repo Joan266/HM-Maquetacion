@@ -73,8 +73,20 @@ let popularRoomsSwiper = new Swiper(".swiper--popular-rooms", {
   },
   breakpoints: {
     1000: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    1500: {
       slidesPerView: 3,
-      centeredSlides: true,
-    }
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
   }
 });

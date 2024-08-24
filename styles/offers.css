@@ -14,6 +14,7 @@
 .offer__description {
   padding: 1em;
   padding-bottom: 2em;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .offer__img {
@@ -56,22 +57,27 @@
   margin: 1em 0;
 }
 
-.amenities__popular-rooms-grid__item {
+.amenities__item {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: #777777;
   font-size: 0.65rem;
+  display: flex;
+  flex-direction: row;
+  height: 2em;
+  align-items: center;
 }
-.amenities__popular-rooms-grid__item > img {
+.amenities__item > img {
   margin-top: 0.1em;
   margin-right: 0.5em;
 }
 
 .popular {
-  text-align: center;
   position: relative;
-  z-index: 2;
-  padding: 2em 0;
+}
+.popular > div {
+  text-align: center;
+  padding: 2em 1em;
 }
 
 .popular::before {
@@ -79,14 +85,10 @@
   background-color: #222222;
   position: absolute;
   top: 0;
-  left: -1em;
-  width: calc(100% + 2em);
+  left: 0;
+  width: 100%;
   height: 100%;
   z-index: -1;
-}
-
-.popular-rooms-grid {
-  display: none;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -100,8 +102,7 @@
   }
   .offer--desktop {
     display: block;
-    margin-bottom: 24em;
-    box-shadow: none;
+    margin-bottom: 30em;
   }
   .offer__img {
     position: relative;
@@ -110,7 +111,7 @@
   }
   .offer__img > img {
     width: 100%;
-    height: 100%;
+    height: 20em;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -122,7 +123,7 @@
     transform: translate(0, 90%);
     width: 90%;
     background-color: white;
-    padding: 2em;
+    padding: 2em 1em;
   }
   .offer__description__row {
     display: flex;
@@ -135,62 +136,30 @@
   }
   .offer__price {
     right: 5%;
-    top: 0;
+    bottom: 2em;
+    transform: translateY(-50%);
   }
   .offer__price--discount {
-    transform: translateY(50%);
+    bottom: 0;
   }
-  .popular-rooms-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-    margin-top: 4em;
+  .amenities {
+    gap: 0.5em;
   }
-  .popular {
+  .amenities__item {
+    font-size: 0.55rem;
+  }
+  .amenities__item > img {
+    margin-right: 1em;
+    width: 20px;
+    height: auto;
+  }
+  .popular > div {
     padding: 4em 0;
   }
-  .popular::before {
-    left: 50%;
-    width: 100vw;
-    transform: translateX(-50%);
-  }
-  .popular-rooms-grid__item {
-    background-color: white;
-  }
-  .popular-rooms-grid__item__room-description {
-    position: relative;
-    padding: 1em;
-    padding-bottom: 2em;
-  }
-  .popular-rooms-grid__item__room-description .popular-rooms-grid__item__room-features {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .popular-rooms-grid__item__room-description .text {
-    margin: 0.7em 0;
-  }
-  .popular-rooms-grid__item__room-description .popular-rooms-grid__item__room-description__price {
-    font-weight: 700;
-    font-family: "Archivo", sans-serif;
-    color: #BEAD8E;
-    font-size: 0.9rem;
-    margin-right: 0.5em;
-  }
-  .popular-rooms-grid__item__room-description .popular-rooms-grid__item__room-description__price > span {
-    font-size: 0.65rem;
-  }
-  .popular-rooms-grid__item__room-description .popular-rooms-grid__item__room-description__booking {
-    font-weight: 700;
-    font-family: "Archivo", sans-serif;
-    color: #BDBDBD;
-    font-size: 0.9rem;
-  }
-  .popular-rooms-grid__item__img {
-    width: 100%;
-    height: 10em;
-    -o-object-fit: cover;
-       object-fit: cover;
+}
+@media only screen and (min-width: 1500px) {
+  .offer--desktop {
+    display: block;
+    margin-bottom: 24em;
   }
 }/*# sourceMappingURL=offers.css.map */
