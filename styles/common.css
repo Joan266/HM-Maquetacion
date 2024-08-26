@@ -304,6 +304,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .page-intro__path-info {
     right: 0;
+    font-size: 0.8rem;
   }
   .img-frame {
     height: 22em;
