@@ -202,7 +202,7 @@
 .swiper--popular-rooms .swiper-slide {
   position: relative;
   text-align: center;
-  background-color: #F8F8F8;
+  background-color: white;
   cursor: pointer;
 }
 .swiper--related-rooms .swiper-slide__room-description,

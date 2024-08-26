@@ -1,3 +1,7 @@
+.room-details__info > section {
+  margin-bottom: 2em;
+}
+
 .room-details__header {
   margin-bottom: 1em;
 }
@@ -159,6 +163,9 @@
   .room-details__info {
     width: 100%;
     max-width: 29em;
+  }
+  .room-details__info > section {
+    margin-bottom: 4em;
   }
   .room-details__form--mobile {
     display: none;
