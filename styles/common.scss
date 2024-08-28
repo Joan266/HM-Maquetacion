@@ -9,10 +9,6 @@ html,
   padding: 0
 }
 
-body {
-  min-width: 320px
-}
-
 
 a {
   text-decoration: none;
@@ -36,6 +32,36 @@ input[type="date"] {
 
 input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
+}
+
+//SWIPER COMMON STYLING
+.non-swiper {
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $beige-tan;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 2em;
+  width: 2em;
+  color: $beige-tan;
+  background-color: #F8F8F8;
+  transition: background-color 100ms ease, color 100ms ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: $beige-tan;
+  color: #F8F8F8;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 0.7rem;
+  font-weight: bolder;
 }
 
 .container {
@@ -281,6 +307,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 @media only screen and (min-width: 1000px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    height: 2.3em;
+    width: 2.3em;
+  }
+
   .container {
     padding: 0;
     max-width: 950px;
@@ -296,7 +329,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .button {
     margin-top: 1.5em;
   }
-  
+
   .title {
     font-size: 3rem;
   }
@@ -358,7 +391,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1500px) {
   .container {
     max-width: 1150px;
     margin-bottom: 8em;

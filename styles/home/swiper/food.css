@@ -1,0 +1,39 @@
+.swiper--food {
+  max-width: 25em;
+}
+.swiper--food .swiper-slide {
+  height: auto;
+}
+.swiper--food .swiper-slide__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10%;
+  max-height: 90%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .swiper--food {
+    display: none;
+  }
+  .non-swiper--food {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    width: 100%;
+    justify-content: center;
+    height: 15em;
+  }
+  .non-swiper--food .non-swiper__item {
+    position: relative;
+    flex: 1;
+    background-color: #777777;
+  }
+  .non-swiper--food .non-swiper__item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=food.css.map */

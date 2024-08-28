@@ -48,7 +48,7 @@ header {
   gap: 1em;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+  transition: max-height 0.2s ease-out, padding 0.2s ease-out, max-height 0.3s ease-in, padding 0.3s ease-in;
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 .drop-down > a {
@@ -56,7 +56,6 @@ header {
   font-weight: 600;
   font-family: "Archivo", sans-serif;
   font-size: 0.85rem;
-  transition: ease-out 0.2s;
 }
 
 .drop-down--open {
@@ -83,7 +82,7 @@ header {
     background-color: white;
     z-index: 1000;
     transform: translateX(-50%);
-    transition: top 0.3s ease;
+    transition: top 0.2s ease-out, opacity 0.4s ease-in;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -109,10 +108,17 @@ header {
     align-items: center;
     justify-content: center;
     gap: 2em;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-family: "Archivo", sans-serif;
     font-weight: 600;
     color: #111111;
+  }
+  .menu-desktop__links > a {
+    padding: 0.7em;
+  }
+  .menu-desktop__links > a:hover {
+    color: #BEAD8E;
+    transition: color 0.2s ease;
   }
   .menu-desktop__tools {
     flex: 1;

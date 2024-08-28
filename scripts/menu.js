@@ -22,7 +22,7 @@ window.addEventListener('scroll', function () {
   if (window.scrollY > 100 && isMenuVisible) {
     menu.classList.add('menu-hidden');
     isMenuVisible = false;
-  } else if (window.scrollY <= 0 && !isMenuVisible) {
+  } else if (window.scrollY <= 50 && !isMenuVisible) {
     menu.classList.remove('menu-hidden');
     isMenuVisible = true;
   }
