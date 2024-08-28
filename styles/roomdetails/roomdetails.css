@@ -171,15 +171,22 @@
   }
   .room-details__form--desktop {
     display: block;
-    margin-top: 1.5em;
-    padding-left: 0;
+    margin-top: 0;
     width: 35%;
+    position: relative;
   }
-  .room-details__form--desktop > h5 {
+  .room-details__form--desktop > form {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 2em 1.5em;
+  }
+  .room-details__form--desktop > form > h5 {
+    font-weight: 700;
+    font-family: "Archivo", sans-serif;
+    margin-left: 3em;
     font-size: 1rem;
     margin-bottom: 2.25em;
   }
-  .room-details__form--desktop .input-container {
+  .room-details__form--desktop > form .input-container {
     margin-top: 1em;
   }
   .room-details__header {

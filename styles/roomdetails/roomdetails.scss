@@ -180,6 +180,7 @@
 
   .room-details__info {
     width: 60%;
+
     >section {
       margin-bottom: 4em;
     }
@@ -192,15 +193,25 @@
 
   .room-details__form--desktop {
     display: block;
-    margin-top: 1.5em;
-    padding-left: 0;
+    margin-top: 0;
     width: 35%;
-    >h5{
-      font-size: 1rem;
-      margin-bottom: 2.25em;
-    }
-    .input-container{
-      margin-top: 1em;
+    position: relative;
+
+    >form {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      padding: 2em 1.5em;
+
+      >h5 {
+        font-weight: 700;
+        font-family: $font-archivo;
+        margin-left: 3em;
+        font-size: 1rem;
+        margin-bottom: 2.25em;
+      }
+
+      .input-container {
+        margin-top: 1em;
+      }
     }
   }
 

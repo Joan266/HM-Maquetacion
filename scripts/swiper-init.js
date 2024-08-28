@@ -5,7 +5,12 @@ let counterSwiper = new Swiper(".swiper--counter", {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
-  },
+  }, 
+  breakpoints: {
+    1000: {
+      loop: false,
+    }
+  }
 });
 
 let foodSwiper = new Swiper(".swiper--food", {
@@ -14,7 +19,12 @@ let foodSwiper = new Swiper(".swiper--food", {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
-  },
+  }, 
+  breakpoints: {
+    1000: {
+      loop: false,
+    }
+  }
 });
 
 let menuSwiper = new Swiper(".swiper--menu", {
@@ -35,7 +45,12 @@ let facilitiesSwiper = new Swiper(".swiper--facilities", {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
-  },
+  }, 
+  breakpoints: {
+    1000: {
+      loop: false,
+    }
+  }
 });
 let roomsSwiper = new Swiper(".swiper--rooms", {
   slidesPerView: 1,

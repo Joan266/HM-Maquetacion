@@ -15,7 +15,7 @@
     <header>
         <div id="menu-mobile" class="menu-mobile">
             <div class="menu-mobile__container">
-                <div class="icon">
+                <div id="hamburguer" class="icon">
                     <img id="menu-icon" src="./public/icon/hamburguer 1.svg" alt="hamburguer menu"></img>
                 </div>
                 <a href="home.html">
@@ -89,63 +89,65 @@
                 <div class="page-intro__path-info">Home | <span>Blog</span></div>
             </div>
         </div>
-        <section class="contact container">
-            <div class="contact-options">
-                <div class="contact-options__item">
-                    <img src="./public/icon/location_icon 1.svg" alt="location">
-                    <span class="contact-options__item__number">01</span>
-                    <div class="contact-options__item__content">
-                        <h4 class="title title--small">Hotel Adress</h4>
-                        <span class="text">19/A, Cirikon City hall Tower</span>
-                        <span class="text">New York, NYC</span>
-                    </div>
-                </div>
-                <div class="contact-options__item">
-                    <img src="./public/icon/phone_icon 1.svg" alt="phone">
-                    <span class="contact-options__item__number">02</span>
-                    <div class="contact-options__item__content">
-                        <h4 class="title title--small">Phone Number</h4>
-                        <span class="text">+ 97656 8675 7864 7</span>
-                        <span class="text">+ 876 766 8675 765 6</span>
-                    </div>
-                </div>
-                <div class="contact-options__item">
-                    <img src="./public/icon/email_icon 1.svg" alt="email">
-                    <span class="contact-options__item__number">03</span>
-                    <div class="contact-options__item__content">
-                        <h4 class="title title--small">Email</h4>
-                        <span class="text">info@webmail.com</span>
-                        <span class="text">jobs.webmail@mail.com</span>
-                    </div>
+        <section class="contact-options container">
+            <div class="contact-options__item">
+                <img src="./public/icon/location_icon 1.svg" alt="location">
+                <span class="contact-options__item__number">01</span>
+                <div class="contact-options__item__content">
+                    <h4 class="title title--small">Hotel Adress</h4>
+                    <span class="text">19/A, Cirikon City hall Tower</span>
+                    <span class="text">New York, NYC</span>
                 </div>
             </div>
-            <div class="contact__img">
-            </div>
-            <div class="contact__form">
-                <div class="desktop-agrupation">
-                    <div class="contact__form__input">
-                        <img src="./public/icon/contact 1.svg" alt="avatar icon">
-                        <input placeholder="Your full name" type="text">
-                    </div>
-                    <div class="contact__form__input">
-                        <img src="./public/icon/contact 2.svg" alt="phone icon">
-                        <input placeholder="Add phone number" type="text">
-                    </div>
-                    <div class="contact__form__input">
-                        <img src="./public/icon/contact 3.svg" alt="mail icon">
-                        <input placeholder="Enter email address" type="text">
-                    </div>
-                    <div class="contact__form__input">
-                        <img src="./public/icon/contact 4.svg" alt="book icon">
-                        <input placeholder="Enter subject" type="text">
-                    </div>
+            <div class="contact-options__item">
+                <img src="./public/icon/phone_icon 1.svg" alt="phone">
+                <span class="contact-options__item__number">02</span>
+                <div class="contact-options__item__content">
+                    <h4 class="title title--small">Phone Number</h4>
+                    <span class="text">+ 97656 8675 7864 7</span>
+                    <span class="text">+ 876 766 8675 765 6</span>
                 </div>
-                <div class="contact__form__input contact__form__input--big">
-                    <img src="./public/icon/contact 5.svg" alt="pen icon">
-                    <input placeholder="Enter message" type="text">
-                </div>
-                <button class="button"><strong>SEND</strong></button>
             </div>
+            <div class="contact-options__item">
+                <img src="./public/icon/email_icon 1.svg" alt="email">
+                <span class="contact-options__item__number">03</span>
+                <div class="contact-options__item__content">
+                    <h4 class="title title--small">Email</h4>
+                    <span class="text">info@webmail.com</span>
+                    <span class="text">jobs.webmail@mail.com</span>
+                </div>
+            </div>
+        </section>
+        <section class="contact__map container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97201.29748708602!2d-3.7369787943282713!3d40.41902806301341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42294fa38eefeb%3A0xcb53c29d6d783b95!2sHotel%20Mirador%20de%20Chamartin!5e0!3m2!1sen!2ses!4v1724852230324!5m2!1sen!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contact__form container">
+            <div class="desktop-agrupation">
+                <div class="contact__form__input">
+                    <img src="./public/icon/contact 1.svg" alt="avatar icon">
+                    <input placeholder="Your full name" type="text">
+                </div>
+                <div class="contact__form__input">
+                    <img src="./public/icon/contact 2.svg" alt="phone icon">
+                    <input placeholder="Add phone number" type="text">
+                </div>
+                <div class="contact__form__input">
+                    <img src="./public/icon/contact 3.svg" alt="mail icon">
+                    <input placeholder="Enter email address" type="text">
+                </div>
+                <div class="contact__form__input">
+                    <img src="./public/icon/contact 4.svg" alt="book icon">
+                    <input placeholder="Enter subject" type="text">
+                </div>
+            </div>
+            <div class="contact__form__input contact__form__input--big">
+                <img src="./public/icon/contact 5.svg" alt="pen icon">
+                <input placeholder="Enter message" type="text">
+            </div>
+            <button class="button"><strong>SEND</strong></button>
         </section>
     </main>
     <footer class="footer">

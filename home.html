@@ -21,7 +21,7 @@
   <header>
     <div id="menu-mobile" class="menu-mobile">
       <div class="menu-mobile__container">
-        <div class="icon">
+        <div id="hamburguer" class="icon">
           <img id="menu-icon" src="./public/icon/hamburguer 1.svg" alt="hamburguer menu"></img>
         </div>
         <a href="home.html">
@@ -92,8 +92,8 @@
       <div class="container">
         <h1 class="subtitle">THE ULTIMATE LUXURY EXPIRIENCE</h1>
         <h2 class="title">The Perfect Base For You</h2>
-        <button class="button">TAKE A TOUR</button>
-        <button class="button button--black">LEARN MORE</button>
+        <a class="button">TAKE A TOUR</a>
+        <a class="button button--black">LEARN MORE</a>
         <form>
           <div>
             <label for="arrival-date">Arrival Date</label>
@@ -107,7 +107,7 @@
               <input id="ledeparture-date" type="date" placeholder=""></input>
             </div>
           </div>
-          <button class="button"><a href="rooms.html">CHECK AVAILABILITY</a></button>
+          <a href="rooms.html" class="button">CHECK AVAILABILITY</a>
         </form>
       </div>
     </section>
@@ -119,7 +119,7 @@
           <p class="text about-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <button class="button">BOOK NOW</button>
+          <a href="roomdetails.html" class="button">BOOK NOW</a>
         </div>
         <div class="cards-container">
           <div class="about-us__card about-us__card--white">
@@ -221,10 +221,18 @@
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat you have to understand this.</p>
-          <iframe class="intro-video__video intro-video__video--mobile"></iframe>
-          <button class="button">BOOK NOW</button>
+          <div class="intro-video__video intro-video__video--mobile">
+            <video src="./public/video/hotel_miranda_intro.mp4" title="Hotel Miranda Video" controls autoplay muted>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <a href="roomdetails.html" class="button">BOOK NOW</a>
         </div>
-        <iframe class="intro-video__video intro-video__video--desktop"></iframe>
+        <div class="intro-video__video intro-video__video--desktop">
+          <video src="./public/video/hotel_miranda_intro.mp4" title="Hotel Miranda Video" controls autoplay muted>
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </section>
     <section class="facilities container">

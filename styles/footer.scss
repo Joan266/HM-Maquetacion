@@ -23,7 +23,9 @@
 .footer__info {
   position: relative;
   padding: 1em;
-
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
   p {
     font-size: 0.7rem;
     font-family: $font-archivo;
@@ -120,7 +122,10 @@
   flex-direction: column;
   gap: 0.5em;
   padding: 0 1em;
+  max-width: 375px;
   min-height: 5em;
+  margin-left: auto;
+  margin-right: auto;
   align-items: flex-start;
   justify-content: center;
 }
