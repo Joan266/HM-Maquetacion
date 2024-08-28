@@ -37,7 +37,7 @@
 .room-details__form {
   margin-top: 2em;
   margin-bottom: 2em;
-  padding: 0 1.25em;
+  padding: 0 0.7em;
   display: block;
   text-align: left;
 
@@ -46,7 +46,7 @@
     font-family: $font-archivo;
     font-size: 0.85rem;
     margin-left: 3em;
-    margin-bottom: 1em;
+    margin-bottom: 1.25em;
   }
 
   label {
@@ -57,9 +57,9 @@
     color: #222222;
   }
 
-  .date-input-container {
+  .input-container {
     position: relative;
-    margin-top: 0.5em;
+    margin-top: 0.7em;
     margin-bottom: 1em;
 
     input {
@@ -199,7 +199,7 @@
       font-size: 1rem;
       margin-bottom: 2.25em;
     }
-    .date-input-container{
+    .input-container{
       margin-top: 1em;
     }
   }

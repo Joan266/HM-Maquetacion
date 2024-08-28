@@ -58,7 +58,7 @@
 }
 
 .amenities__item {
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Roboto", sans-serif;
   color: #777777;
   font-size: 0.65rem;
@@ -95,14 +95,15 @@
   .offers {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 2em;
+    gap: 1em;
   }
   .offer--mobile {
     display: none;
   }
   .offer--desktop {
     display: block;
-    margin-bottom: 26em;
+    margin-bottom: 24em;
+    width: 80%;
   }
   .offer__img {
     position: relative;
@@ -111,9 +112,11 @@
   }
   .offer__img > img {
     width: 100%;
-    height: 20em;
+    height: 15em;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
   .offer__description {
     position: absolute;
@@ -153,7 +156,7 @@
     gap: 0.5em;
   }
   .amenities__item {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
   .amenities__item > img {
     margin-right: 1em;
@@ -168,10 +171,11 @@
   .offers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3em;
+    gap: 4em;
   }
   .offer--desktop {
     display: block;
     margin-bottom: 26em;
+    width: 100%;
   }
 }/*# sourceMappingURL=offers.css.map */

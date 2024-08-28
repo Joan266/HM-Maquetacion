@@ -148,4 +148,12 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+@media only screen and (min-width: 1500px) {
+  .footer__info {
+    max-width: 1150px;
+  }
+  .footer__cr-text {
+    max-width: 1150px;
+  }
 }/*# sourceMappingURL=footer.css.map */

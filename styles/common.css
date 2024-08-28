@@ -232,8 +232,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   position: relative;
 }
 .page-intro > div {
-  margin-bottom: 3em;
-  padding-bottom: 1em;
   padding-top: 8em;
   height: 18em;
 }
@@ -268,7 +266,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-family: "Roboto", sans-serif;
   font-size: 0.7rem;
   font-weight: 600;
-  padding: 1em 2em;
+  padding: 1em 1.25em;
+  transform: translateY(50%);
 }
 .page-intro__path-info > span {
   color: #BEAD8E;
@@ -307,7 +306,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     margin-top: 1.5em;
   }
   .title {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
   .title--smaller {
     font-size: 1.3rem;
@@ -316,25 +315,27 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-size: 1.5rem;
   }
   .title--medium {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
   .subtitle {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
   }
   .page-intro > div {
     padding-bottom: 3em;
     padding-top: 12em;
-    height: 22em;
+    height: 25em;
+    margin-bottom: 4em;
   }
   .page-intro::after {
     height: 5em;
   }
   .page-intro::before {
-    height: 22em;
+    height: 25em;
   }
   .page-intro__path-info {
     right: 0;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    padding: 1em 4em;
   }
   .img-frame {
     height: 22em;

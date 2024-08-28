@@ -61,6 +61,7 @@
 .intro-video {
   position: relative;
   background-color: #222222;
+
   >div {
     display: block;
     padding: 5em 1em;
@@ -124,7 +125,7 @@
   padding: 0 0.5em;
 
   .about-us__card__img {
-    height: 14em;
+    height: 16em;
     width: 100%;
 
     img {
@@ -139,7 +140,7 @@
     text-align: center;
     color: #111111;
     background-color: #FFFFFF;
-    padding: 2.5em 0.5em;
+    padding: 3.5em 0.5em;
     position: relative;
 
     .about-us__card__description__icon {
@@ -324,6 +325,7 @@
   .about-us {
     width: 100%;
     position: relative;
+
     >div {
       padding: 0;
       display: flex;
@@ -334,7 +336,8 @@
 
     .about-us__header {
       margin-top: 6.5em;
-      width: 50%;
+      width: 30%;
+
       .text {
         max-width: 30em;
       }
@@ -343,8 +346,22 @@
     .cards-container {
       display: flex;
       flex-direction: row;
-      width: 50%;
-      gap: 1.5em;
+      width: 70%;
+      gap: 2.5em;
+    }
+
+    .about-us__card {
+      gap: 2em;
+      padding: 0;
+      margin: 0;
+    }
+
+    .about-us__card__img {
+      height: 16em;
+    }
+
+    .about-us__card__description {
+      padding: 4.5em 0.5em;
     }
   }
 
@@ -352,32 +369,19 @@
     content: "";
     position: absolute;
     top: 27%;
-    width: 65%;
+    width: 45%;
     z-index: -1;
     height: 75%;
     background-color: #F9F9F9;
   }
 
-  .about-us__card {
-    gap: 1.5em;
-    padding: 0;
-    margin: 0;
-  }
-
-  .about-us__card__img {
-    height: 12em;
-  }
-
   .about-us__card--white {
     margin-bottom: 2em;
+    flex-direction: column-reverse;
   }
 
   .about-us__card--black {
     margin-top: 2em;
-  }
-
-  .about-us__card--white {
-    flex-direction: column-reverse;
   }
 
   .rooms {

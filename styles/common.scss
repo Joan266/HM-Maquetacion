@@ -244,8 +244,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: relative;
 
   >div {
-    margin-bottom: 3em;
-    padding-bottom: 1em;
     padding-top: 8em;
     height: 18em;
   }
@@ -283,7 +281,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-family: $font-roboto;
   font-size: 0.7rem;
   font-weight: 600;
-  padding: 1em 2em;
+  padding: 1em 1.25em;
+  transform: translateY(50%);
 
   >span {
     color: $beige-tan;
@@ -331,7 +330,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
 
   .title--smaller {
@@ -343,18 +342,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
   .title--medium {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 
   .subtitle {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
   }
 
   .page-intro {
     >div {
       padding-bottom: 3em;
       padding-top: 12em;
-      height: 22em;
+      height: 25em;
+      margin-bottom: 4em;
     }
 
     &::after {
@@ -362,13 +362,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     &::before {
-      height: 22em;
+      height: 25em;
     }
   }
 
   .page-intro__path-info {
     right: 0;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    padding: 1em 4em;
   }
 
   .img-frame {

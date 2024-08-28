@@ -3,7 +3,7 @@
 .footer {
   width: 100%;
   background-color: transparent;
-  position: relative; 
+  position: relative;
 }
 
 .footer::before {
@@ -19,6 +19,7 @@
   height: calc(100% - 4em);
   z-index: -1;
 }
+
 .footer__info {
   position: relative;
   padding: 1em;
@@ -159,4 +160,14 @@
     margin-right: auto;
   }
 
+}
+
+@media only screen and (min-width: 1500px) {
+  .footer__info {
+    max-width: 1150px;
+  }
+
+  .footer__cr-text {
+    max-width: 1150px;
+  }
 }

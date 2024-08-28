@@ -32,7 +32,7 @@
 .room-details__form {
   margin-top: 2em;
   margin-bottom: 2em;
-  padding: 0 1.25em;
+  padding: 0 0.7em;
   display: block;
   text-align: left;
 }
@@ -41,7 +41,7 @@
   font-family: "Archivo", sans-serif;
   font-size: 0.85rem;
   margin-left: 3em;
-  margin-bottom: 1em;
+  margin-bottom: 1.25em;
 }
 .room-details__form label {
   font-family: "Roboto", sans-serif;
@@ -50,12 +50,12 @@
   width: 100%;
   color: #222222;
 }
-.room-details__form .date-input-container {
+.room-details__form .input-container {
   position: relative;
-  margin-top: 0.5em;
+  margin-top: 0.7em;
   margin-bottom: 1em;
 }
-.room-details__form .date-input-container input {
+.room-details__form .input-container input {
   cursor: pointer;
   width: 100%;
   border: none;
@@ -179,7 +179,7 @@
     font-size: 1rem;
     margin-bottom: 2.25em;
   }
-  .room-details__form--desktop .date-input-container {
+  .room-details__form--desktop .input-container {
     margin-top: 1em;
   }
   .room-details__header {

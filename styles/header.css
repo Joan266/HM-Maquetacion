@@ -45,10 +45,10 @@ header {
   background-color: white;
   justify-content: left;
   z-index: 999;
-  gap: 1em;
+  gap: 2em;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out, padding 0.2s ease-out, max-height 0.3s ease-in, padding 0.3s ease-in;
+  transition: max-height 0.15s ease-out, padding 0.15s ease-out, max-height 0.2s ease-in, padding 0.2s ease-in;
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 .drop-down > a {
