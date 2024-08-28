@@ -5,7 +5,12 @@ let counterSwiper = new Swiper(".swiper--counter", {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
-  },
+  }, 
+  breakpoints: {
+    1000: {
+      loop: false,
+    }
+  }
 });
 
 let foodSwiper = new Swiper(".swiper--food", {
@@ -14,7 +19,12 @@ let foodSwiper = new Swiper(".swiper--food", {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
-  },
+  }, 
+  breakpoints: {
+    1000: {
+      loop: false,
+    }
+  }
 });
 
 let menuSwiper = new Swiper(".swiper--menu", {
@@ -35,7 +45,12 @@ let facilitiesSwiper = new Swiper(".swiper--facilities", {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
-  },
+  }, 
+  breakpoints: {
+    1000: {
+      loop: false,
+    }
+  }
 });
 let roomsSwiper = new Swiper(".swiper--rooms", {
   slidesPerView: 1,
@@ -60,7 +75,8 @@ let relatedRoomsSwiper = new Swiper(".swiper--related-rooms", {
   },
   breakpoints: {
     1000: {
-      slidesPerView: 2
+      slidesPerView: 2,
+      spaceBetween: 30,
     }
   }
 });
@@ -73,8 +89,20 @@ let popularRoomsSwiper = new Swiper(".swiper--popular-rooms", {
   },
   breakpoints: {
     1000: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    1500: {
       slidesPerView: 3,
-      centeredSlides: true,
-    }
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
   }
 });

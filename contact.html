@@ -4,19 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/contact/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
     <title>Contact Page</title>
 </head>
 
 <body>
-    <main class="contact">
-        <div class="page-intro">
-            <h1 class="subtitle">THE ULTIMATE LUXURY</h1>
-            <h2 class="title">New Details</h2>
-            <div class="page-intro__path-info">Home | <span>Blog</span></div>
+    <header>
+        <div id="menu-mobile" class="menu-mobile">
+            <div class="menu-mobile__container">
+                <div id="hamburguer" class="icon">
+                    <img id="menu-icon" src="./public/icon/hamburguer 1.svg" alt="hamburguer menu"></img>
+                </div>
+                <a href="home.html">
+                    <article class="logo">
+                        <div class="icon icon--logo">H</div>
+                        <img src="./public/icon/Hotel Miranda.svg" alt="hotel miranda text"></img>
+                    </article>
+                </a>
+            </div>
+            <div class="menu-mobile__container">
+                <div class="icon">
+                    <img src="./public/icon/member_icon 1.svg" alt="member icon hotel miranda"></img>
+                </div>
+                <div class="icon">
+                    <img src="./public/icon/magnifier_icon 1.svg" alt="magnifier icon hotel miranda"></img>
+                </div>
+            </div>
         </div>
-        <div class="contact-options">
+        <div id="menu-desktop" class="menu-desktop">
+            <div class="menu-desktop__logo">
+                <a href="home.html">
+                    <article class="logo">
+                        <div class="icon icon--logo-big">H</div>
+                        <img src="./public/icon/Hotel Miranda desktop.svg" alt="hotel miranda text"></img>
+                    </article>
+                </a>
+            </div>
+            <div class="menu-desktop__links">
+                <a href="aboutus.html">
+                    About Us
+                </a>
+                <a href="rooms.html">
+                    Rooms
+                </a>
+                <a href="offers.html">
+                    Offers
+                </a>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </div>
+            <div class="menu-desktop__tools">
+                <div class="icon">
+                    <img src="./public/icon/member_icon 1.svg" alt="member icon hotel miranda"></img>
+                </div>
+                <div class="icon">
+                    <img src="./public/icon/magnifier_icon 1.svg" alt="magnifier icon hotel miranda"></img>
+                </div>
+            </div>
+        </div>
+        <div id="drop-down" class="drop-down">
+            <a href="aboutus.html">
+                About Us
+            </a>
+            <a href="rooms.html">
+                Rooms
+            </a>
+            <a href="offers.html">
+                Offers
+            </a>
+            <a href="contact.html">
+                Contact
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="page-intro">
+            <div class="container">
+                <h1 class="subtitle subtitle--white">THE ULTIMATE LUXURY</h1>
+                <h2 class="title title--white">New Details</h2>
+                <div class="page-intro__path-info">Home | <span>Blog</span></div>
+            </div>
+        </div>
+        <section class="contact-options container">
             <div class="contact-options__item">
                 <img src="./public/icon/location_icon 1.svg" alt="location">
                 <span class="contact-options__item__number">01</span>
@@ -44,10 +117,14 @@
                     <span class="text">jobs.webmail@mail.com</span>
                 </div>
             </div>
-        </div>
-        <div class="contact__img">
-        </div>
-        <div class="contact__form">
+        </section>
+        <section class="contact__map container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97201.29748708602!2d-3.7369787943282713!3d40.41902806301341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42294fa38eefeb%3A0xcb53c29d6d783b95!2sHotel%20Mirador%20de%20Chamartin!5e0!3m2!1sen!2ses!4v1724852230324!5m2!1sen!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contact__form container">
             <div class="desktop-agrupation">
                 <div class="contact__form__input">
                     <img src="./public/icon/contact 1.svg" alt="avatar icon">
@@ -71,12 +148,12 @@
                 <input placeholder="Enter message" type="text">
             </div>
             <button class="button"><strong>SEND</strong></button>
-        </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__info">
             <section class="footer__info__about">
-                <a href="index.html">
+                <a href="home.html">
                     <article class="logo logo--footer">
                         <div class="icon icon--logo">H</div>
                         <img src="./public/icon/Hotel Miranda.svg" alt="hotel miranda text"></img>
@@ -95,7 +172,7 @@
                 </article>
             </section>
             <section class="footer__info__services">
-                <div class="footer__subtitle">Services.</div>
+                <div class="footer__subtitle">Services</div>
                 <ul>
                     <li>Gaming Zone</li>
                     <li>Marriage Party</li>
@@ -110,32 +187,32 @@
                 </ul>
             </section>
             <section class="footer__info__contact">
-                <div class="footer__subtitle">Contact Us.</div>
-                <div class="footer__contact-num">
-                    <div class="icon">
+                <div class="footer__subtitle">Contact Us</div>
+                <div class="footer__contact-link">
+                    <div class="footer__contact-link__icon">
                         <img src="./public/icon/phone_icon 1.svg" alt="phone icon"></img>
                     </div>
                     <div>
-                        <div class="footer__contact-num__title">Phone Number</div>
-                        <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
+                        <div class="footer__contact-link__title">Phone Number</div>
+                        <span class="footer__contact-link__subtitle">+34 645 844 709</span>
                     </div>
                 </div>
-                <div class="footer__contact-num">
-                    <div class="icon">
+                <div class="footer__contact-link">
+                    <div class="footer__contact-link__icon">
                         <img src="./public/icon/email_icon 1.svg" alt="email icon"></img>
                     </div>
                     <div>
-                        <div class="footer__contact-num__title">Phone Number</div>
-                        <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
+                        <div class="footer__contact-link__title">Email</div>
+                        <span class="footer__contact-link__subtitle">joanalemany26@gmail.com</span>
                     </div>
                 </div>
-                <div class="footer__contact-num">
-                    <div class="icon">
+                <div class="footer__contact-link">
+                    <div class="footer__contact-link__icon">
                         <img src="./public/icon/location_icon 1.svg" alt="location icon"></img>
                     </div>
                     <div>
-                        <div class="footer__contact-num__title">Phone Number</div>
-                        <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
+                        <div class="footer__contact-link__title">Location</div>
+                        <span class="footer__contact-link__subtitle">Madrid</span>
                     </div>
                 </div>
             </section>
@@ -145,6 +222,7 @@
             <p>Terms of use | Privacy Environmental Policy</p>
         </article>
     </footer>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>

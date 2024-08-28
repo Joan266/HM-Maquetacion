@@ -1,0 +1,58 @@
+.swiper--popular-rooms {
+  background-color: white;
+  margin-top: 2em;
+}
+.swiper--popular-rooms .swiper-slide {
+  position: relative;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+}
+.swiper--popular-rooms .swiper-slide__room-description {
+  position: relative;
+  padding: 1.5em 1em;
+}
+.swiper--popular-rooms .swiper-slide__room-description .swiper-slide__room-features {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+}
+.swiper--popular-rooms .swiper-slide__room-description .text {
+  margin: 0;
+  margin-bottom: 1.5em;
+}
+.swiper--popular-rooms .swiper-slide__room-description .swiper-slide__room-description__price {
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  color: #BEAD8E;
+  font-size: 1.4rem;
+  margin-right: 1.5em;
+}
+.swiper--popular-rooms .swiper-slide__room-description .swiper-slide__room-description__price > span {
+  font-size: 0.65rem;
+}
+.swiper--popular-rooms .swiper-slide__room-description .swiper-slide__room-description__booking {
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  color: #BDBDBD;
+  font-size: 1rem;
+}
+.swiper--popular-rooms .swiper-slide__img {
+  width: 100%;
+  height: 13em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.swiper--popular-rooms .swiper-button-next,
+.swiper--popular-rooms .swiper-button-prev {
+  top: 9em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .swiper--popular-rooms {
+    padding: 0.75em;
+    background-color: #222222;
+  }
+}/*# sourceMappingURL=popular-rooms.css.map */

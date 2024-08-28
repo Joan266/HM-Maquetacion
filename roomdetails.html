@@ -5,43 +5,128 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="styles/index.css">
-  <link rel="stylesheet" href="styles/roomdetails.css">
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/roomdetails/roomdetails.css">
+  <link rel="stylesheet" href="styles/roomdetails/swiper/related-rooms.css">
   <title>Room Details Page</title>
-
 </head>
 
 <body>
-  <main class="room">
-    <div class="page-intro">
-      <h1 class="subtitle">THE ULTIMATE LUXURY</h1>
-      <h2 class="title">Ultimate Room</h2>
-      <div class="page-intro__path-info">Home | <span>Room Details</span></div>
+  <header>
+    <div id="menu-mobile" class="menu-mobile">
+      <div class="menu-mobile__container">
+        <div id="hamburguer" class="icon">
+          <img id="menu-icon" src="./public/icon/hamburguer 1.svg" alt="hamburguer menu"></img>
+        </div>
+        <a href="home.html">
+          <article class="logo">
+            <div class="icon icon--logo">H</div>
+            <img src="./public/icon/Hotel Miranda.svg" alt="hotel miranda text"></img>
+          </article>
+        </a>
+      </div>
+      <div class="menu-mobile__container">
+        <div class="icon">
+          <img src="./public/icon/member_icon 1.svg" alt="member icon hotel miranda"></img>
+        </div>
+        <div class="icon">
+          <img src="./public/icon/magnifier_icon 1.svg" alt="magnifier icon hotel miranda"></img>
+        </div>
+      </div>
     </div>
-    <div class="container">
-      <div class="room__container">
+    <div id="menu-desktop" class="menu-desktop">
+      <div class="menu-desktop__logo">
+        <a href="home.html">
+          <article class="logo">
+            <div class="icon icon--logo-big">H</div>
+            <img src="./public/icon/Hotel Miranda desktop.svg" alt="hotel miranda text"></img>
+          </article>
+        </a>
+      </div>
+      <div class="menu-desktop__links">
+        <a href="aboutus.html">
+          About Us
+        </a>
+        <a href="rooms.html">
+          Rooms
+        </a>
+        <a href="offers.html">
+          Offers
+        </a>
+        <a href="contact.html">
+          Contact
+        </a>
+      </div>
+      <div class="menu-desktop__tools">
+        <div class="icon">
+          <img src="./public/icon/member_icon 1.svg" alt="member icon hotel miranda"></img>
+        </div>
+        <div class="icon">
+          <img src="./public/icon/magnifier_icon 1.svg" alt="magnifier icon hotel miranda"></img>
+        </div>
+      </div>
+    </div>
+    <div id="drop-down" class="drop-down">
+      <a href="aboutus.html">
+        About Us
+      </a>
+      <a href="rooms.html">
+        Rooms
+      </a>
+      <a href="offers.html">
+        Offers
+      </a>
+      <a href="contact.html">
+        Contact
+      </a>
+    </div>
+  </header>
+  <main>
+    <div class="page-intro">
+      <div class="container">
+        <h1 class="subtitle subtitle--white">THE ULTIMATE LUXURY</h1>
+        <h2 class="title title--white">Ultimate Room</h2>
+        <div class="page-intro__path-info">Home | <span>Room Details</span></div>
+      </div>
+    </div>
+    <section class="room-details container">
+      <div class="room-details__info">
         <section>
-          <div class="room__img">
-            <div class="room__header">
+          <div class="room-details__img">
+            <div class="room-details__header">
               <div>
                 <h3 class="subtitle">DOUBLE BED</h3>
                 <h4 class="title title--black title--medium">Luxury Double Bed</h4>
               </div>
-              <span class="room__price">$345<span>/Night</span></span>
+              <span class="room-details__price">$345<span>/Night</span></span>
             </div>
             <img src="./public/img/room 1.webp" alt="hotel room"></img>
           </div>
-          <form class="room__form room__form--mobile">
+          <form class="room-details__form room-details__form--mobile">
             <h5>Check Availability</h5>
             <label for="check-in">Check In</label>
-            <div class="date-input-container">
+            <div class="input-container">
               <input id="check-in" type="date"></input>
             </div>
             <label for="check-out">Check Out</label>
-            <div class="date-input-container">
+            <div class="input-container">
               <input id="check-out" type="date" placeholder=""></input>
             </div>
-            <button class="button">CHECK AVAILABILITY</button>
+            <label for="check-out">Full Name</label>
+            <div class="input-container">
+              <input id="fullname" type="text" placeholder="Enter your fullname"></input>
+            </div>
+            <label for="check-out">Email</label>
+            <div class="input-container">
+              <input id="email" type="email" placeholder="Enter your email"></input>
+            </div>
+            <label for="check-out">Phone</label>
+            <div class="input-container">
+              <input id="phone" type="text" placeholder="Enter your phone number"></input>
+            </div>
+            <a class="button">CHECK AVAILABILITY</a>
           </form>
           <p class="text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -145,8 +230,11 @@
                   <img class="swiper-slide__room-features" src="./public/icon/hotel-room-features 1.svg"
                     alt="hotel room features"></img>
                   <h5 class="title title--black title--smaller">Minimal Duplex Room</h5>
-                  <p class="text text--small">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                  <div><span class="swiper-slide__room-description__price">$345<span>/Night</span></span><span class="swiper-slide__room-description__booking">Booking Now</span></div>
+                  <p class="text text--smaller">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do
+                    eiusmod
+                    tempor.</p>
+                  <div><span class="swiper-slide__room-description__price">$345<span>/Night</span></span><span
+                      class="swiper-slide__room-description__booking">Booking Now</span></div>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -155,8 +243,11 @@
                   <img class="swiper-slide__room-features" src="./public/icon/hotel-room-features 1.svg"
                     alt="hotel room features"></img>
                   <h5 class="title title--black title--smaller">Minimal Duplex Room</h5>
-                  <p class="text text--small">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                  <div><span class="swiper-slide__room-description__price">$345<span>/Night</span></span><span class="swiper-slide__room-description__booking">Booking Now</span></div>
+                  <p class="text text--smaller">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do
+                    eiusmod
+                    tempor.</p>
+                  <div><span class="swiper-slide__room-description__price">$345<span>/Night</span></span><span
+                      class="swiper-slide__room-description__booking">Booking Now</span></div>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -165,8 +256,11 @@
                   <img class="swiper-slide__room-features" src="./public/icon/hotel-room-features 1.svg"
                     alt="hotel room features"></img>
                   <h5 class="title title--black title--smaller">Minimal Duplex Room</h5>
-                  <p class="text text--small">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                  <div><span class="swiper-slide__room-description__price">$345<span>/Night</span></span><span class="swiper-slide__room-description__booking">Booking Now</span></div>
+                  <p class="text text--smaller">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do
+                    eiusmod
+                    tempor.</p>
+                  <div><span class="swiper-slide__room-description__price">$345<span>/Night</span></span><span
+                      class="swiper-slide__room-description__booking">Booking Now</span></div>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -175,8 +269,11 @@
                   <img class="swiper-slide__room-features" src="./public/icon/hotel-room-features 1.svg"
                     alt="hotel room features"></img>
                   <h5 class="title title--black title--smaller">Minimal Duplex Room</h5>
-                  <p class="text text--small">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                  <div><span class="swiper-slide__room-description__price">$345<span>/Night</span></span><span class="swiper-slide__room-description__booking">Booking Now</span></div>
+                  <p class="text text--smaller">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do
+                    eiusmod
+                    tempor.</p>
+                  <div><span class="swiper-slide__room-description__price">$345<span>/Night</span></span><span
+                      class="swiper-slide__room-description__booking">Booking Now</span></div>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -185,18 +282,11 @@
                   <img class="swiper-slide__room-features" src="./public/icon/hotel-room-features 1.svg"
                     alt="hotel room features"></img>
                   <h5 class="title title--black title--smaller">Minimal Duplex Room</h5>
-                  <p class="text text--small">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                  <div><span class="swiper-slide__room-description__price">$345<span>/Night</span></span><span class="swiper-slide__room-description__booking">Booking Now</span></div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img class="swiper-slide__img" src="./public/img/room 1.webp" alt="room 1"></img>
-                <div class="swiper-slide__room-description">
-                  <img class="swiper-slide__room-features" src="./public/icon/hotel-room-features 1.svg"
-                    alt="hotel room features"></img>
-                  <h5 class="title title--black title--smaller">Minimal Duplex Room</h5>
-                  <p class="text text--small">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                  <div><span class="swiper-slide__room-description__price">$345<span>/Night</span></span><span class="swiper-slide__room-description__booking">Booking Now</span></div>
+                  <p class="text text--smaller">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do
+                    eiusmod
+                    tempor.</p>
+                  <div><span class="swiper-slide__room-description__price">$345<span>/Night</span></span><span
+                      class="swiper-slide__room-description__booking">Booking Now</span></div>
                 </div>
               </div>
             </div>
@@ -205,24 +295,38 @@
           </div>
         </section>
       </div>
-      <form class="room__form room__form--desktop">
-        <h5>Check Availability</h5>
-        <label for="check-in">Check In</label>
-        <div class="date-input-container">
-          <input id="check-in" type="date"></input>
-        </div>
-        <label for="check-out">Check Out</label>
-        <div class="date-input-container">
-          <input id="check-out" type="date" placeholder=""></input>
-        </div>
-        <button class="button">CHECK AVAILABILITY</button>
-      </form>
-    </div>
+      <div class="room-details__form room-details__form--desktop">
+        <form>
+          <h5>Check Availability</h5>
+          <label for="check-in">Check In</label>
+          <div class="input-container">
+            <input id="check-in" type="date"></input>
+          </div>
+          <label for="check-out">Check Out</label>
+          <div class="input-container">
+            <input id="check-out" type="date" placeholder=""></input>
+          </div>
+          <label for="check-out">Full Name</label>
+          <div class="input-container">
+            <input id="fullname" type="text" placeholder="Enter your fullname"></input>
+          </div>
+          <label for="check-out">Email</label>
+          <div class="input-container">
+            <input id="email" type="email" placeholder="Enter your email"></input>
+          </div>
+          <label for="check-out">Phone</label>
+          <div class="input-container">
+            <input id="phone" type="text" placeholder="Enter your phone number"></input>
+          </div>
+          <a class="button">CHECK AVAILABILITY</a>
+        </form>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__info">
       <section class="footer__info__about">
-        <a href="index.html">
+        <a href="home.html">
           <article class="logo logo--footer">
             <div class="icon icon--logo">H</div>
             <img src="./public/icon/Hotel Miranda.svg" alt="hotel miranda text"></img>
@@ -239,7 +343,7 @@
         </article>
       </section>
       <section class="footer__info__services">
-        <div class="footer__subtitle">Services.</div>
+        <div class="footer__subtitle">Services</div>
         <ul>
           <li>Gaming Zone</li>
           <li>Marriage Party</li>
@@ -254,32 +358,32 @@
         </ul>
       </section>
       <section class="footer__info__contact">
-        <div class="footer__subtitle">Contact Us.</div>
-        <div class="footer__contact-num">
-          <div class="icon">
+        <div class="footer__subtitle">Contact Us</div>
+        <div class="footer__contact-link">
+          <div class="footer__contact-link__icon">
             <img src="./public/icon/phone_icon 1.svg" alt="phone icon"></img>
           </div>
           <div>
-            <div class="footer__contact-num__title">Phone Number</div>
-            <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
+            <div class="footer__contact-link__title">Phone Number</div>
+            <span class="footer__contact-link__subtitle">+34 645 844 709</span>
           </div>
         </div>
-        <div class="footer__contact-num">
-          <div class="icon">
+        <div class="footer__contact-link">
+          <div class="footer__contact-link__icon">
             <img src="./public/icon/email_icon 1.svg" alt="email icon"></img>
           </div>
           <div>
-            <div class="footer__contact-num__title">Phone Number</div>
-            <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
+            <div class="footer__contact-link__title">Email</div>
+            <span class="footer__contact-link__subtitle">joanalemany26@gmail.com</span>
           </div>
         </div>
-        <div class="footer__contact-num">
-          <div class="icon">
+        <div class="footer__contact-link">
+          <div class="footer__contact-link__icon">
             <img src="./public/icon/location_icon 1.svg" alt="location icon"></img>
           </div>
           <div>
-            <div class="footer__contact-num__title">Phone Number</div>
-            <span class="footer__contact-num__subtitle">+987 876 765 76 577</span>
+            <div class="footer__contact-link__title">Location</div>
+            <span class="footer__contact-link__subtitle">Madrid</span>
           </div>
         </div>
       </section>
@@ -291,6 +395,7 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="scripts/swiper-init.js"></script>
+  <script src="scripts/menu.js"></script>
 </body>
 
 </html>

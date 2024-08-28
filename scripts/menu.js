@@ -1,4 +1,4 @@
-document.getElementById('menu-mobile').addEventListener('click', function () {
+document.getElementById('hamburguer').addEventListener('click', function () {
   var menu = document.getElementById('menu-mobile');
   var menuIcon = document.getElementById('menu-icon');
   var dropDown = document.getElementById('drop-down');
@@ -22,7 +22,7 @@ window.addEventListener('scroll', function () {
   if (window.scrollY > 100 && isMenuVisible) {
     menu.classList.add('menu-hidden');
     isMenuVisible = false;
-  } else if (window.scrollY <= 0 && !isMenuVisible) {
+  } else if (window.scrollY <= 70 && !isMenuVisible) {
     menu.classList.remove('menu-hidden');
     isMenuVisible = true;
   }

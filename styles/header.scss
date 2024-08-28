@@ -47,17 +47,16 @@ header {
   background-color: white;
   justify-content: left;
   z-index: 999;
-  gap: 1em;
+  gap: 2em;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
-
+  transition: max-height 0.15s ease-out, padding 0.15s ease-out,max-height 0.2s ease-in, padding 0.2s ease-in;
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.1);
   >a {
     color: #111111;
     font-weight: 600;
     font-family: $font-archivo;
     font-size: 0.85rem;
-    transition: ease-out 0.2s;
   }
 }
 
@@ -78,25 +77,24 @@ header {
   .menu-desktop {
     display: flex;
     position: fixed;
-    top: 1em;
+    top: 1.5em;
     left: 50%;
     width: 80%;
     min-width: 950px;
-    padding: 0.75em;
-    min-height: 4em;
+    padding: 1em 2em;
+    min-height: 6em;
     background-color: white;
     z-index: 1000;
     transform: translateX(-50%);
-    transition: top 0.3s ease;
+    transition: top 0.2s ease-out, opacity 0.4s ease-in;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
     border: 2px solid #333333;
   }
 
   .menu-hidden {
-    top: -102px;
+    top: -153px;
   }
 
   .menu-desktop__logo {
@@ -116,10 +114,17 @@ header {
     align-items: center;
     justify-content: center;
     gap: 2em;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-family: $font-archivo;
     font-weight: 600;
     color: #111111;
+    >a{
+      padding: 0.7em;
+      &:hover{
+        color:$beige-tan;
+        transition: color 0.2s ease;
+      }
+    }
   }
 
   .menu-desktop__tools {
