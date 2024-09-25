@@ -1,7 +1,6 @@
 name: CI for Hotel Miranda
 
 on:
-
   push:
     branches:
       - deployment
@@ -36,6 +35,5 @@ jobs:
       uses: jakejarvis/s3-sync-action@v0.5.1
       with:
         args: --acl public-read --delete
-      env:
-        SOURCE_DIR: ./dist 
-        AWS_S3_BUCKET: hotelmiranda266 
+        source_dir: ./dist
+        destination_bucket: hotelmiranda266
