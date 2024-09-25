@@ -1,9 +1,9 @@
 name: CI for Hotel Miranda
 
 on:
-  push:
+  pull_request:
     branches:
-      - deployment
+      - main
 
 jobs:
   build:
